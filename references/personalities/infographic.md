@@ -30,7 +30,7 @@
 
 ```html
 <!-- 统计卡片 -->
-<section style="background-color:{{HIGHLIGHT_BG}};border-radius:12px;padding:20px 24px;margin:24px 0;display:flex;justify-content:space-between;">
+<section style="background-color:{{HIGHLIGHT_BG}};border-radius:12px;padding:20px 24px;margin:32px 0;display:flex;justify-content:space-between;">
 <section style="text-align:center;flex:1;">
 <p style="font-size:28px;font-weight:700;color:{{PRIMARY}};margin:0 0 4px 0;line-height:1;">{{STAT_1}}</p>
 <p style="font-size:11px;color:{{TEXT_LIGHT}};margin:0;">{{LABEL_1}}</p>
@@ -74,7 +74,7 @@
 ### body_paragraph
 
 ```html
-<p style="font-size:15px;color:{{TEXT}};margin:0 0 20px 0;line-height:2.0;">{{CONTENT}}</p>
+<p style="font-size:15px;color:{{TEXT}};margin:0 0 24px 0;line-height:2.0;">{{CONTENT}}</p>
 ```
 
 ### highlight_inline
@@ -87,7 +87,7 @@
 
 ```html
 <!-- 引用（卡片式） -->
-<section style="background-color:{{HIGHLIGHT_BG}};border-left:4px solid {{PRIMARY}};border-radius:0 8px 8px 0;padding:16px 20px;margin:24px 0;">
+<section style="background-color:{{HIGHLIGHT_BG}};border-left:4px solid {{PRIMARY}};border-radius:0 8px 8px 0;padding:16px 20px;margin:32px 0;">
 <p style="font-size:14px;color:{{TEXT}};margin:0;line-height:1.8;">{{QUOTE}}</p>
 </section>
 ```
@@ -97,7 +97,7 @@
 信息图人格特有：对比双栏。
 
 ```html
-<section style="display:flex;gap:12px;margin:24px 0;">
+<section style="display:flex;gap:12px;margin:32px 0;">
 <section style="flex:1;background-color:{{HIGHLIGHT_BG}};border-radius:10px;padding:16px;">
 <p style="font-size:12px;font-weight:600;color:{{PRIMARY}};margin:0 0 8px 0;">{{LEFT_TITLE}}</p>
 <p style="font-size:14px;color:{{TEXT}};margin:0;line-height:1.6;">{{LEFT_CONTENT}}</p>
@@ -127,7 +127,7 @@
 ### image_placeholder
 
 ```html
-<section style="background-color:{{HIGHLIGHT_BG}};border-radius:12px;padding:48px 20px;margin:24px 0;text-align:center;">
+<section style="background-color:{{HIGHLIGHT_BG}};border-radius:12px;padding:48px 20px;margin:32px 0;text-align:center;">
 <p style="font-size:12px;color:{{TEXT_LIGHT}};margin:0;">[ 图表/图片位置 ]</p>
 </section>
 ```

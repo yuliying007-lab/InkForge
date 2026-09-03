@@ -36,7 +36,7 @@
 
 ```html
 <!-- 信息表 -->
-<section style="border:1px solid {{BORDER}};margin:22px 0;font-size:14px;">
+<section style="border:1px solid {{BORDER}};margin:32px 0;font-size:14px;">
 <section style="display:flex;border-bottom:1px solid {{BORDER}};">
 <section style="width:72px;background-color:{{HIGHLIGHT_BG}};padding:10px 12px;font-weight:600;color:{{TEXT}};flex-shrink:0;">时间</section>
 <section style="flex:1;padding:10px 12px;color:{{TEXT}};">{{DATE}}</section>
@@ -81,7 +81,7 @@
 ### body_paragraph
 
 ```html
-<p style="font-size:15px;color:{{TEXT}};margin:0 0 20px 0;line-height:2.0;">{{CONTENT}}</p>
+<p style="font-size:15px;color:{{TEXT}};margin:0 0 24px 0;line-height:2.0;">{{CONTENT}}</p>
 ```
 
 ### highlight_inline
@@ -96,7 +96,7 @@
 
 ```html
 <!-- 政策/规定引用 -->
-<section style="background-color:{{HIGHLIGHT_BG}};border-top:2px solid {{PRIMARY}};border-bottom:2px solid {{PRIMARY}};padding:14px 16px;margin:22px 0;">
+<section style="background-color:{{HIGHLIGHT_BG}};border-top:2px solid {{PRIMARY}};border-bottom:2px solid {{PRIMARY}};padding:18px 20px;margin:32px 0;">
 <p style="font-size:11px;color:{{PRIMARY}};margin:0 0 6px 0;letter-spacing:1px;font-weight:600;">相关规定</p>
 <p style="font-size:14px;color:{{TEXT}};line-height:1.85;margin:0;">{{QUOTE}}</p>
 </section>
@@ -130,7 +130,7 @@
 ### image_placeholder
 
 ```html
-<section style="border:1px dashed {{BORDER}};padding:40px 20px;margin:22px 0;text-align:center;">
+<section style="border:1px dashed {{BORDER}};padding:40px 20px;margin:32px 0;text-align:center;">
 <p style="font-size:12px;color:{{TEXT_LIGHT}};margin:0;">[ 二维码/活动海报位置 ]</p>
 </section>
 ```
@@ -138,7 +138,7 @@
 ### cta_block
 
 ```html
-<section style="background-color:{{PRIMARY}};padding:14px;margin:24px 0;text-align:center;">
+<section style="background-color:{{PRIMARY}};padding:14px;margin:32px 0;text-align:center;">
 <p style="font-size:15px;color:#ffffff;font-weight:700;margin:0;letter-spacing:1px;">请相关同学按时完成</p>
 </section>
 ```
@@ -149,7 +149,7 @@
 
 ```html
 <!-- 落款区 -->
-<section style="margin:32px 0 0 0;text-align:right;padding-right:10px;">
+<section style="margin:40px 0 0 0;text-align:right;padding-right:10px;">
 <p style="font-size:14px;color:{{TEXT}};margin:0 0 4px 0;">{{ORG}}</p>
 <p style="font-size:13px;color:{{TEXT_LIGHT}};margin:0;">{{DATE}}</p>
 </section>

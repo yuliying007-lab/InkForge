@@ -57,7 +57,7 @@
 邀请函特有：致辞/邀请语——居中、正式语气。
 
 ```html
-<section style="margin:24px 0;padding:0 16px;text-align:center;">
+<section style="margin:32px 0;padding:0 16px;text-align:center;">
 <p style="font-size:15px;color:{{TEXT}};line-height:2.0;margin:0;">{{GREETING}}</p>
 </section>
 ```
@@ -78,7 +78,7 @@
 邀请函特有：报名/RSVP 引导区。
 
 ```html
-<section style="margin:28px 0;padding:20px;background-color:{{HIGHLIGHT_BG}};border-radius:10px;text-align:center;">
+<section style="margin:32px 0;padding:20px;background-color:{{HIGHLIGHT_BG}};border-radius:10px;text-align:center;">
 <p style="font-size:12px;color:{{PRIMARY}};margin:0 0 6px 0;font-weight:700;letter-spacing:2px;">报名方式</p>
 <p style="font-size:15px;color:{{TEXT}};margin:0 0 12px 0;line-height:1.6;">{{RSVP_INSTRUCTION}}</p>
 <section style="display:inline-block;width:80px;height:80px;border:1px dashed {{PRIMARY}};border-radius:6px;display:flex;align-items:center;justify-content:center;margin:0 auto;opacity:0.5;">
@@ -90,7 +90,7 @@
 ### section_heading
 
 ```html
-<section style="margin:28px 0 14px 0;text-align:center;">
+<section style="margin:40px 0 16px 0;text-align:center;">
 <p style="font-size:14px;font-weight:700;color:{{TEXT}};margin:0;letter-spacing:1px;">{{HEADING}}</p>
 <section style="display:inline-block;width:24px;height:2px;background-color:{{PRIMARY}};margin:8px 0 0 0;opacity:0.5;"></section>
 </section>
@@ -99,7 +99,7 @@
 ### body_paragraph
 
 ```html
-<p style="font-size:15px;color:{{TEXT}};margin:0 0 20px 0;line-height:2.0;text-align:center;">{{CONTENT}}</p>
+<p style="font-size:15px;color:{{TEXT}};margin:0 0 24px 0;line-height:2.0;text-align:center;">{{CONTENT}}</p>
 ```
 
 ### highlight_inline
@@ -111,7 +111,7 @@
 ### image_placeholder
 
 ```html
-<section style="border:1px dashed {{TEXT_LIGHT}};padding:42px 20px;margin:22px 0;text-align:center;border-radius:8px;">
+<section style="border:1px dashed {{TEXT_LIGHT}};padding:42px 20px;margin:32px 0;text-align:center;border-radius:8px;">
 <p style="font-size:12px;color:{{TEXT_LIGHT}};margin:0;">[ 活动主视觉 / 往期照片 ]</p>
 </section>
 ```
@@ -119,7 +119,7 @@
 ### article_footer
 
 ```html
-<section style="margin:32px 0 0 0;text-align:center;">
+<section style="margin:40px 0 0 0;text-align:center;">
 <!-- 底部装饰线 -->
 <section style="display:inline-block;width:60px;height:1px;background-color:{{PRIMARY}};opacity:0.4;"></section>
 <span style="display:inline-block;margin:0 12px;font-size:11px;color:{{TEXT_LIGHT}};letter-spacing:2px;">期待您的到来</span>

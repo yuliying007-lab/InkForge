@@ -50,7 +50,7 @@
 
 ```html
 <!-- 引用（极简左线） -->
-<section style="border-left:2px solid {{PRIMARY}};padding:8px 0 8px 20px;margin:28px 0;">
+<section style="border-left:2px solid {{PRIMARY}};padding:8px 0 8px 20px;margin:32px 0;">
 <p style="font-size:14px;color:{{TEXT}};margin:0;line-height:2.0;">{{QUOTE}}</p>
 </section>
 ```

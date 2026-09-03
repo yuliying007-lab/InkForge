@@ -38,7 +38,7 @@
 ### body_paragraph
 
 ```html
-<p style="font-size:15px;color:{{TEXT}};margin:0 0 20px 0;line-height:2.0;">{{CONTENT}}</p>
+<p style="font-size:15px;color:{{TEXT}};margin:0 0 24px 0;line-height:2.0;">{{CONTENT}}</p>
 ```
 
 ### highlight_inline
@@ -52,7 +52,7 @@
 笔记人格特有：💡 提示框。
 
 ```html
-<section style="background-color:#f0fdf4;border:1px solid #86efac;border-radius:8px;padding:14px 16px;margin:20px 0;">
+<section style="background-color:#f0fdf4;border:1px solid #86efac;border-radius:8px;padding:18px 20px;margin:20px 0;">
 <p style="font-size:13px;color:#166534;margin:0;line-height:1.6;"><span style="margin-right:6px;">💡</span><strong>提示：</strong>{{TIP_CONTENT}}</p>
 </section>
 ```
@@ -62,7 +62,7 @@
 笔记人格特有：⚠️ 重点/警告框。
 
 ```html
-<section style="background-color:#fefce8;border:1px solid #fde047;border-radius:8px;padding:14px 16px;margin:20px 0;">
+<section style="background-color:#fefce8;border:1px solid #fde047;border-radius:8px;padding:18px 20px;margin:20px 0;">
 <p style="font-size:13px;color:#854d0e;margin:0;line-height:1.6;"><span style="margin-right:6px;">⚠️</span><strong>注意：</strong>{{WARNING_CONTENT}}</p>
 </section>
 ```
@@ -72,7 +72,7 @@
 笔记人格特有：📝 待办/练习框。
 
 ```html
-<section style="background-color:{{HIGHLIGHT_BG}};border:1px solid #e5e5e5;border-radius:8px;padding:14px 16px;margin:20px 0;">
+<section style="background-color:{{HIGHLIGHT_BG}};border:1px solid #e5e5e5;border-radius:8px;padding:18px 20px;margin:20px 0;">
 <p style="font-size:13px;color:{{TEXT}};margin:0 0 8px 0;font-weight:700;"><span style="margin-right:6px;">📝</span>练习</p>
 <p style="font-size:13px;color:{{TEXT}};margin:0 0 6px 20px;line-height:1.6;">☐ {{TODO_1}}</p>
 <p style="font-size:13px;color:{{TEXT}};margin:0 0 6px 20px;line-height:1.6;">☐ {{TODO_2}}</p>
@@ -84,7 +84,7 @@
 笔记人格特有：代码/命令块。
 
 ```html
-<section style="background-color:#1e1e1e;border-radius:6px;padding:14px 16px;margin:20px 0;overflow-x:auto;">
+<section style="background-color:#1e1e1e;border-radius:6px;padding:18px 20px;margin:20px 0;overflow-x:auto;">
 <pre style="font-size:13px;color:#d4d4d4;margin:0;line-height:1.6;font-family:'SF Mono','Fira Code','Courier New',Consolas,monospace;white-space:pre-wrap;">{{CODE}}</pre>
 </section>
 ```
@@ -106,13 +106,13 @@
 ### separator
 
 ```html
-<section style="border-bottom:1px dashed #d0d0d0;margin:28px 0;"></section>
+<section style="border-bottom:1px dashed #d0d0d0;margin:48px 0;"></section>
 ```
 
 ### image_placeholder
 
 ```html
-<section style="background-color:{{HIGHLIGHT_BG}};border:1px dashed #d0d0d0;border-radius:8px;padding:40px 20px;margin:24px 0;text-align:center;">
+<section style="background-color:{{HIGHLIGHT_BG}};border:1px dashed #d0d0d0;border-radius:8px;padding:40px 20px;margin:32px 0;text-align:center;">
 <p style="font-size:12px;color:{{TEXT_LIGHT}};margin:0;">[ 插图 / 截图 / 示意图 ]</p>
 </section>
 <p style="font-size:12px;color:{{TEXT_LIGHT}};margin:4px 0 0 0;text-align:center;">图：{{CAPTION}}</p>

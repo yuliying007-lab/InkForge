@@ -14,7 +14,7 @@
 <section style="background-color:{{BG}};padding:24px 20px 20px;">
 
 <!-- 档案编号条 -->
-<section style="display:flex;justify-content:space-between;align-items:center;margin:0 0 20px 0;padding:0 0 12px 0;border-bottom:2px solid {{TEXT}};">
+<section style="display:flex;justify-content:space-between;align-items:center;margin:0 0 24px 0;padding:0 0 12px 0;border-bottom:2px solid {{TEXT}};">
 <p style="font-size:11px;color:{{TEXT_LIGHT}};margin:0;letter-spacing:2px;">CASE FILE</p>
 <p style="font-size:11px;color:{{TEXT_LIGHT}};margin:0;letter-spacing:1px;">#{{CASE_ID}} · {{DATE}}</p>
 </section>
@@ -31,7 +31,7 @@
 案例拆解特有：结论先行——反转色块（PRIMARY 底+白字）。
 
 ```html
-<section style="background-color:{{PRIMARY}};padding:18px 20px;margin:22px 0;">
+<section style="background-color:{{PRIMARY}};padding:18px 20px;margin:32px 0;">
 <p style="font-size:11px;color:rgba(255,255,255,0.6);margin:0 0 8px 0;letter-spacing:2px;font-weight:600;">VERDICT · 核心结论</p>
 <p style="font-size:16px;color:#ffffff;line-height:1.8;margin:0;font-weight:600;">{{LESSON}}</p>
 </section>
@@ -91,7 +91,7 @@
 ### body_paragraph
 
 ```html
-<p style="font-size:15px;color:{{TEXT}};margin:0 0 20px 0;line-height:2.0;">{{CONTENT}}</p>
+<p style="font-size:15px;color:{{TEXT}};margin:0 0 24px 0;line-height:2.0;">{{CONTENT}}</p>
 ```
 
 ### highlight_inline
@@ -103,7 +103,7 @@
 ### blockquote
 
 ```html
-<section style="border:1px solid {{BORDER}};padding:14px 16px;margin:22px 0;">
+<section style="border:1px solid {{BORDER}};padding:18px 20px;margin:32px 0;">
 <p style="font-size:11px;color:{{TEXT_LIGHT}};margin:0 0 6px 0;letter-spacing:1px;">OBSERVATION</p>
 <p style="font-size:14px;color:{{TEXT}};line-height:1.85;margin:0;">{{QUOTE}}</p>
 </section>
@@ -118,7 +118,7 @@
 ### image_placeholder
 
 ```html
-<section style="border:1px dashed {{BORDER}};padding:42px 20px;margin:22px 0;text-align:center;">
+<section style="border:1px dashed {{BORDER}};padding:42px 20px;margin:32px 0;text-align:center;">
 <p style="font-size:12px;color:{{TEXT_LIGHT}};margin:0;">[ 案例截图 / 数据图表 ]</p>
 </section>
 ```
@@ -126,7 +126,7 @@
 ### cta_block
 
 ```html
-<section style="background-color:{{PRIMARY}};padding:14px;margin:24px 0;text-align:center;">
+<section style="background-color:{{PRIMARY}};padding:14px;margin:32px 0;text-align:center;">
 <p style="font-size:15px;color:#ffffff;font-weight:700;margin:0;">转发给正在做项目复盘的人</p>
 </section>
 ```
@@ -134,7 +134,7 @@
 ### article_footer
 
 ```html
-<section style="border-top:2px solid {{TEXT}};margin:32px 0 0 0;padding:14px 0 0 0;">
+<section style="border-top:2px solid {{TEXT}};margin:40px 0 0 0;padding:14px 0 0 0;">
 <section style="display:flex;justify-content:space-between;">
 <p style="font-size:11px;color:{{TEXT_LIGHT}};margin:0;letter-spacing:1px;">CASE FILE #{{CASE_ID}}</p>
 <p style="font-size:11px;color:{{TEXT_LIGHT}};margin:0;">— END —</p>

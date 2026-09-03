@@ -24,7 +24,7 @@
 清单特有：顶部进度指示——显示总项数和建议完成度。
 
 ```html
-<section style="margin:20px 0;padding:14px 16px;background-color:{{HIGHLIGHT_BG}};border-radius:8px;">
+<section style="margin:20px 0;padding:18px 20px;background-color:{{HIGHLIGHT_BG}};border-radius:8px;">
 <section style="display:flex;justify-content:space-between;margin:0 0 8px 0;">
 <p style="font-size:12px;color:{{TEXT}};margin:0;font-weight:600;">共 {{TOTAL}} 项</p>
 <p style="font-size:12px;color:{{PRIMARY}};margin:0;font-weight:700;">建议提前 {{LEAD_TIME}} 开始准备</p>
@@ -97,13 +97,13 @@
 ### section_heading
 
 ```html
-<h2 style="font-size:17px;font-weight:700;color:{{TEXT}};margin:28px 0 14px 0;line-height:1.4;">{{HEADING}}</h2>
+<h2 style="font-size:17px;font-weight:700;color:{{TEXT}};margin:40px 0 16px 0;line-height:1.4;">{{HEADING}}</h2>
 ```
 
 ### body_paragraph
 
 ```html
-<p style="font-size:15px;color:{{TEXT}};margin:0 0 20px 0;line-height:2.0;">{{CONTENT}}</p>
+<p style="font-size:15px;color:{{TEXT}};margin:0 0 24px 0;line-height:2.0;">{{CONTENT}}</p>
 ```
 
 ### highlight_inline
@@ -115,7 +115,7 @@
 ### image_placeholder
 
 ```html
-<section style="border:1px dashed {{TEXT_LIGHT}};padding:42px 20px;margin:22px 0;text-align:center;border-radius:8px;">
+<section style="border:1px dashed {{TEXT_LIGHT}};padding:42px 20px;margin:32px 0;text-align:center;border-radius:8px;">
 <p style="font-size:12px;color:{{TEXT_LIGHT}};margin:0;">[ 参考图 / 示例 ]</p>
 </section>
 ```
@@ -123,7 +123,7 @@
 ### article_footer
 
 ```html
-<section style="margin:32px 0 0 0;padding:18px 0 0 0;border-top:1px solid {{HIGHLIGHT_BG}};">
+<section style="margin:40px 0 0 0;padding:18px 0 0 0;border-top:1px solid {{HIGHLIGHT_BG}};">
 <section style="background-color:{{HIGHLIGHT_BG}};padding:12px 16px;border-radius:8px;text-align:center;">
 <p style="font-size:13px;color:{{TEXT}};margin:0;">📋 建议截图保存本清单，逐项勾选不遗漏</p>
 </section>

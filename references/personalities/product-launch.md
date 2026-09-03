@@ -28,7 +28,7 @@
 ### summary_box
 
 ```html
-<section style="border:1px solid {{BORDER}};padding:16px;margin:22px 0;">
+<section style="border:1px solid {{BORDER}};padding:16px;margin:32px 0;">
 <p style="font-size:11px;color:{{TEXT_LIGHT}};margin:0 0 8px 0;letter-spacing:2px;font-weight:600;">WHAT'S NEW</p>
 <p style="font-size:15px;color:{{TEXT}};line-height:1.85;margin:0;">{{BENEFIT}}</p>
 </section>
@@ -76,7 +76,7 @@
 ### body_paragraph
 
 ```html
-<p style="font-size:15px;color:{{TEXT}};margin:0 0 20px 0;line-height:2.0;">{{CONTENT}}</p>
+<p style="font-size:15px;color:{{TEXT}};margin:0 0 24px 0;line-height:2.0;">{{CONTENT}}</p>
 ```
 
 ### highlight_inline
@@ -88,7 +88,7 @@
 ### blockquote
 
 ```html
-<section style="border-left:3px solid {{BORDER}};padding:10px 16px;margin:22px 0;">
+<section style="border-left:3px solid {{BORDER}};padding:10px 16px;margin:32px 0;">
 <p style="font-size:14px;color:{{TEXT}};line-height:1.85;margin:0;">{{QUOTE}}</p>
 </section>
 ```
@@ -102,7 +102,7 @@
 ### image_placeholder
 
 ```html
-<section style="background-color:{{HIGHLIGHT_BG}};border-radius:8px;padding:44px 20px;margin:22px 0;text-align:center;">
+<section style="background-color:{{HIGHLIGHT_BG}};border-radius:8px;padding:44px 20px;margin:32px 0;text-align:center;">
 <p style="font-size:12px;color:{{TEXT_LIGHT}};margin:0;">[ 产品截图 / 功能演示 ]</p>
 </section>
 ```
@@ -110,7 +110,7 @@
 ### cta_block
 
 ```html
-<section style="background-color:{{PRIMARY}};border-radius:6px;padding:14px;margin:24px 0;text-align:center;">
+<section style="background-color:{{PRIMARY}};border-radius:6px;padding:14px;margin:32px 0;text-align:center;">
 <p style="font-size:15px;color:#ffffff;font-weight:700;margin:0;">立即体验 v{{VERSION}} →</p>
 </section>
 ```
@@ -118,7 +118,7 @@
 ### article_footer
 
 ```html
-<section style="border-top:1px solid {{BORDER}};margin:32px 0 0 0;padding:14px 0 0 0;">
+<section style="border-top:1px solid {{BORDER}};margin:40px 0 0 0;padding:14px 0 0 0;">
 <p style="font-size:12px;color:{{TEXT_LIGHT}};margin:0 0 4px 0;">有反馈？欢迎留言告诉我们。</p>
 <p style="font-size:11px;color:{{TEXT_LIGHT}};margin:0;letter-spacing:1px;">CHANGELOG · v{{VERSION}}</p>
 </section>

@@ -14,7 +14,7 @@
 <section style="background-color:{{HIGHLIGHT_BG}};padding:28px 24px 24px;border-radius:4px;border:1px solid #e8e0d8;">
 
 <!-- 日期戳 -->
-<section style="display:flex;align-items:center;margin:0 0 20px 0;">
+<section style="display:flex;align-items:center;margin:0 0 24px 0;">
 <span style="font-size:14px;margin-right:8px;">📌</span>
 <p style="font-size:12px;color:{{TEXT_LIGHT}};margin:0;font-style:italic;">{{DATE}} · {{WEEKDAY}}</p>
 </section>
@@ -60,7 +60,7 @@
 
 ```html
 <!-- 便签条引用 -->
-<section style="background-color:#fffef0;border:1px dashed {{PRIMARY}};border-radius:4px;padding:16px 20px;margin:24px 0;transform:rotate(-0.5deg);">
+<section style="background-color:#fffef0;border:1px dashed {{PRIMARY}};border-radius:4px;padding:16px 20px;margin:32px 0;transform:rotate(-0.5deg);">
 <p style="font-size:14px;color:{{TEXT}};margin:0;line-height:1.8;font-style:italic;">{{QUOTE}}</p>
 <p style="font-size:11px;color:{{TEXT_LIGHT}};margin:8px 0 0 0;text-align:right;">— 📎 记在这里</p>
 </section>
@@ -75,13 +75,13 @@
 ### separator
 
 ```html
-<p style="font-size:12px;color:{{TEXT_LIGHT}};margin:28px 0;text-align:center;letter-spacing:8px;">· · · · ·</p>
+<p style="font-size:12px;color:{{TEXT_LIGHT}};margin:48px 0;text-align:center;letter-spacing:8px;">· · · · ·</p>
 ```
 
 ### image_placeholder
 
 ```html
-<section style="background-color:{{HIGHLIGHT_BG}};border:1px dashed #d0c8b8;border-radius:4px;padding:40px 20px;margin:24px 0;text-align:center;transform:rotate(0.3deg);">
+<section style="background-color:{{HIGHLIGHT_BG}};border:1px dashed #d0c8b8;border-radius:4px;padding:40px 20px;margin:32px 0;text-align:center;transform:rotate(0.3deg);">
 <p style="font-size:12px;color:{{TEXT_LIGHT}};margin:0;">📷 贴一张照片</p>
 </section>
 ```

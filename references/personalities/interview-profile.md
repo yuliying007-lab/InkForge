@@ -37,7 +37,7 @@
 
 ```html
 <!-- 人物名片 -->
-<section style="display:flex;align-items:center;background-color:{{HIGHLIGHT_BG}};border-radius:10px;padding:18px;margin:24px 0;">
+<section style="display:flex;align-items:center;background-color:{{HIGHLIGHT_BG}};border-radius:10px;padding:18px;margin:32px 0;">
 <!-- 圆形头像占位 -->
 <section style="width:68px;height:68px;background-color:{{BORDER}};border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
 <p style="font-size:22px;color:{{TEXT_LIGHT}};margin:0;">👤</p>
@@ -58,7 +58,7 @@
 
 ```html
 <!-- 问题气泡（左对齐） -->
-<section style="margin:22px 0 14px 0;">
+<section style="margin:40px 0 16px 0;">
 <section style="display:inline-block;background-color:{{PRIMARY}};border-radius:10px 10px 10px 2px;padding:10px 16px;max-width:88%;">
 <p style="font-size:14px;color:#ffffff;line-height:1.8;margin:0;">{{QUESTION}}</p>
 </section>
@@ -78,7 +78,7 @@
 
 ```html
 <!-- 金句提取 -->
-<section style="margin:28px 0;padding:20px 16px;text-align:center;">
+<section style="margin:32px 0;padding:20px 16px;text-align:center;">
 <p style="font-size:42px;color:{{PRIMARY}};margin:0 0 4px 0;line-height:1;opacity:0.35;">"</p>
 <p style="font-size:17px;font-weight:600;color:{{TEXT}};line-height:1.8;margin:0 0 10px 0;">{{QUOTE}}</p>
 <section style="width:24px;height:1px;background-color:{{PRIMARY}};margin:0 auto 8px;"></section>
@@ -102,7 +102,7 @@
 ### body_paragraph
 
 ```html
-<p style="font-size:15px;color:{{TEXT}};margin:0 0 20px 0;line-height:2.0;">{{CONTENT}}</p>
+<p style="font-size:15px;color:{{TEXT}};margin:0 0 24px 0;line-height:2.0;">{{CONTENT}}</p>
 ```
 
 ### highlight_inline
@@ -115,7 +115,7 @@
 
 ```html
 <!-- 编辑注（区别于 pullquote，这是编者按） -->
-<section style="border-top:1px solid {{BORDER}};border-bottom:1px solid {{BORDER}};padding:14px 0;margin:24px 0;">
+<section style="border-top:1px solid {{BORDER}};border-bottom:1px solid {{BORDER}};padding:14px 0;margin:32px 0;">
 <p style="font-size:11px;color:{{PRIMARY}};margin:0 0 6px 0;letter-spacing:1px;font-weight:600;">编者按</p>
 <p style="font-size:14px;color:{{TEXT}};line-height:1.85;margin:0;font-style:italic;">{{QUOTE}}</p>
 </section>
@@ -132,7 +132,7 @@
 ### image_placeholder
 
 ```html
-<section style="background-color:{{HIGHLIGHT_BG}};border-radius:10px;padding:48px 20px;margin:24px 0;text-align:center;">
+<section style="background-color:{{HIGHLIGHT_BG}};border-radius:10px;padding:48px 20px;margin:32px 0;text-align:center;">
 <p style="font-size:12px;color:{{TEXT_LIGHT}};margin:0;font-style:italic;">[ 人物肖像 / 访谈现场 ]</p>
 </section>
 ```
@@ -140,7 +140,7 @@
 ### cta_block
 
 ```html
-<section style="border:1px solid {{PRIMARY}};border-radius:8px;padding:14px;margin:24px 0;text-align:center;">
+<section style="border:1px solid {{PRIMARY}};border-radius:8px;padding:14px;margin:32px 0;text-align:center;">
 <p style="font-size:14px;color:{{PRIMARY}};font-weight:600;margin:0;">把这个人的故事分享给更多人</p>
 </section>
 ```

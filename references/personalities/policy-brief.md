@@ -45,15 +45,15 @@
 政策解读特有：核心组件——新旧政策双栏对比。
 
 ```html
-<section style="margin:22px 0;overflow:hidden;">
+<section style="margin:32px 0;overflow:hidden;">
 <section style="display:flex;gap:0;">
 <!-- 旧政策 -->
-<section style="flex:1;background-color:#f3f4f6;padding:14px 16px;">
+<section style="flex:1;background-color:#f3f4f6;padding:18px 20px;">
 <p style="font-size:11px;color:#9ca3af;margin:0 0 8px 0;font-weight:700;letter-spacing:1px;">旧政策</p>
 <p style="font-size:14px;color:#6b7280;line-height:1.7;margin:0;text-decoration:line-through;">{{OLD_POLICY}}</p>
 </section>
 <!-- 新政策 -->
-<section style="flex:1;background-color:{{HIGHLIGHT_BG}};padding:14px 16px;border-left:3px solid {{PRIMARY}};">
+<section style="flex:1;background-color:{{HIGHLIGHT_BG}};padding:18px 20px;border-left:3px solid {{PRIMARY}};">
 <p style="font-size:11px;color:{{PRIMARY}};margin:0 0 8px 0;font-weight:700;letter-spacing:1px;">新政策 ✦</p>
 <p style="font-size:14px;color:{{TEXT}};line-height:1.7;margin:0;font-weight:600;">{{NEW_POLICY}}</p>
 </section>
@@ -77,13 +77,13 @@
 ### section_heading
 
 ```html
-<h2 style="font-size:17px;font-weight:700;color:{{TEXT}};margin:28px 0 14px 0;line-height:1.4;padding-left:12px;border-left:4px solid {{PRIMARY}};">{{HEADING}}</h2>
+<h2 style="font-size:17px;font-weight:700;color:{{TEXT}};margin:40px 0 16px 0;line-height:1.4;padding-left:12px;border-left:4px solid {{PRIMARY}};">{{HEADING}}</h2>
 ```
 
 ### body_paragraph
 
 ```html
-<p style="font-size:15px;color:{{TEXT}};margin:0 0 20px 0;line-height:2.0;">{{CONTENT}}</p>
+<p style="font-size:15px;color:{{TEXT}};margin:0 0 24px 0;line-height:2.0;">{{CONTENT}}</p>
 ```
 
 ### highlight_inline
@@ -95,7 +95,7 @@
 ### blockquote
 
 ```html
-<section style="background-color:{{HIGHLIGHT_BG}};padding:14px 16px;margin:22px 0;border-left:3px solid {{SECONDARY}};">
+<section style="background-color:{{HIGHLIGHT_BG}};padding:18px 20px;margin:32px 0;border-left:3px solid {{SECONDARY}};">
 <p style="font-size:11px;color:{{TEXT_LIGHT}};margin:0 0 6px 0;letter-spacing:1px;font-weight:600;">官方原文摘录</p>
 <p style="font-size:14px;color:{{TEXT}};line-height:1.85;margin:0;">{{QUOTE}}</p>
 </section>
@@ -110,7 +110,7 @@
 ### image_placeholder
 
 ```html
-<section style="border:1px dashed {{TEXT_LIGHT}};padding:42px 20px;margin:22px 0;text-align:center;">
+<section style="border:1px dashed {{TEXT_LIGHT}};padding:42px 20px;margin:32px 0;text-align:center;">
 <p style="font-size:12px;color:{{TEXT_LIGHT}};margin:0;">[ 政策文件截图 / 流程图 ]</p>
 </section>
 ```
@@ -118,7 +118,7 @@
 ### article_footer
 
 ```html
-<section style="margin:32px 0 0 0;padding:18px 0 0 0;border-top:2px solid {{TEXT}};">
+<section style="margin:40px 0 0 0;padding:18px 0 0 0;border-top:2px solid {{TEXT}};">
 <section style="background-color:{{HIGHLIGHT_BG}};padding:12px 16px;margin:0 0 14px 0;">
 <p style="font-size:12px;color:{{TEXT}};margin:0;line-height:1.7;">⚠️ <span style="font-weight:600;">免责声明：</span>本文为政策解读，不构成法律建议。具体情况请咨询持牌专业人士。</p>
 </section>

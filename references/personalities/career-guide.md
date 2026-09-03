@@ -14,7 +14,7 @@
 <section style="background-color:{{BG}};padding:24px 20px 20px;">
 
 <!-- 状态栏 -->
-<section style="background-color:{{TEXT}};padding:10px 16px;margin:0 0 20px 0;display:flex;justify-content:space-between;align-items:center;">
+<section style="background-color:{{TEXT}};padding:10px 16px;margin:0 0 24px 0;display:flex;justify-content:space-between;align-items:center;">
 <p style="font-size:10px;color:rgba(255,255,255,0.5);margin:0;letter-spacing:2px;">CAREER GUIDE</p>
 <p style="font-size:10px;color:rgba(255,255,255,0.5);margin:0;letter-spacing:1px;">📍 {{STAGE}}</p>
 </section>
@@ -28,7 +28,7 @@
 ### summary_box
 
 ```html
-<section style="background-color:{{HIGHLIGHT_BG}};border-radius:8px;padding:16px;margin:22px 0;">
+<section style="background-color:{{HIGHLIGHT_BG}};border-radius:8px;padding:16px;margin:32px 0;">
 <p style="font-size:11px;color:{{PRIMARY}};margin:0 0 8px 0;font-weight:700;letter-spacing:1px;">🔍 先判断你卡在哪里</p>
 <p style="font-size:15px;color:{{TEXT}};line-height:1.85;margin:0;">{{PROBLEM}}</p>
 </section>
@@ -51,7 +51,7 @@
 ### body_paragraph
 
 ```html
-<p style="font-size:15px;color:{{TEXT}};margin:0 0 20px 0;line-height:2.0;padding-left:44px;">{{CONTENT}}</p>
+<p style="font-size:15px;color:{{TEXT}};margin:0 0 24px 0;line-height:2.0;padding-left:44px;">{{CONTENT}}</p>
 ```
 
 正文缩进 44px 对齐节点右侧——保持路线图的纵向对齐感。
@@ -73,7 +73,7 @@
 职场成长特有：避坑警告区——红色边框+浅红底。
 
 ```html
-<section style="border-left:3px solid #d94f4f;background-color:#fef2f2;padding:14px 16px;margin:20px 0;">
+<section style="border-left:3px solid #d94f4f;background-color:#fef2f2;padding:18px 20px;margin:20px 0;">
 <p style="font-size:11px;color:#d94f4f;margin:0 0 6px 0;font-weight:700;letter-spacing:1px;">⚠ 避坑提醒</p>
 <p style="font-size:14px;color:{{TEXT}};line-height:1.85;margin:0;">{{WARNING_CONTENT}}</p>
 </section>
@@ -106,7 +106,7 @@
 ### blockquote
 
 ```html
-<section style="padding:12px 16px;margin:22px 0;background-color:{{HIGHLIGHT_BG}};border-radius:6px;">
+<section style="padding:12px 16px;margin:32px 0;background-color:{{HIGHLIGHT_BG}};border-radius:6px;">
 <p style="font-size:14px;color:{{TEXT}};line-height:1.85;margin:0;">{{QUOTE}}</p>
 </section>
 ```
@@ -120,7 +120,7 @@
 ### image_placeholder
 
 ```html
-<section style="background-color:{{HIGHLIGHT_BG}};border-radius:8px;padding:40px 20px;margin:22px 0;text-align:center;">
+<section style="background-color:{{HIGHLIGHT_BG}};border-radius:8px;padding:40px 20px;margin:32px 0;text-align:center;">
 <p style="font-size:12px;color:{{TEXT_LIGHT}};margin:0;">[ 简历模板 / 流程图 ]</p>
 </section>
 ```
@@ -128,7 +128,7 @@
 ### cta_block
 
 ```html
-<section style="background-color:{{PRIMARY}};border-radius:6px;padding:14px;margin:24px 0;text-align:center;">
+<section style="background-color:{{PRIMARY}};border-radius:6px;padding:14px;margin:32px 0;text-align:center;">
 <p style="font-size:15px;color:#ffffff;font-weight:700;margin:0;">收藏，面试前再看一遍</p>
 </section>
 ```
@@ -136,7 +136,7 @@
 ### article_footer
 
 ```html
-<section style="background-color:{{TEXT}};padding:12px 16px;margin:32px 0 0 0;">
+<section style="background-color:{{TEXT}};padding:12px 16px;margin:40px 0 0 0;">
 <p style="font-size:11px;color:rgba(255,255,255,0.5);margin:0 0 4px 0;letter-spacing:1px;">CAREER GUIDE · END</p>
 <p style="font-size:13px;color:rgba(255,255,255,0.7);margin:0;">点个"在看"，继续前进</p>
 </section>

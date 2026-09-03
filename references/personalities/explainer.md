@@ -42,7 +42,7 @@
 科普特有：核心组件——概念定义卡，左侧 PRIMARY 竖条。
 
 ```html
-<section style="margin:22px 0;border-left:4px solid {{PRIMARY}};background-color:{{HIGHLIGHT_BG}};padding:16px 18px;">
+<section style="margin:32px 0;border-left:4px solid {{PRIMARY}};background-color:{{HIGHLIGHT_BG}};padding:16px 18px;">
 <p style="font-size:12px;color:{{PRIMARY}};margin:0 0 6px 0;font-weight:700;letter-spacing:1px;">📖 概念</p>
 <p style="font-size:16px;font-weight:700;color:{{TEXT}};margin:0 0 8px 0;line-height:1.4;">{{TERM}}</p>
 <p style="font-size:14px;color:{{TEXT}};line-height:1.85;margin:0;">{{DEFINITION}}</p>
@@ -54,7 +54,7 @@
 科普特有：划重点——反色条，用于每个小节的关键结论。
 
 ```html
-<section style="background-color:{{PRIMARY}};padding:14px 18px;margin:22px 0;">
+<section style="background-color:{{PRIMARY}};padding:14px 18px;margin:32px 0;">
 <p style="font-size:11px;color:rgba(255,255,255,0.6);margin:0 0 6px 0;font-weight:700;letter-spacing:2px;">💡 划重点</p>
 <p style="font-size:15px;color:#ffffff;line-height:1.8;margin:0;font-weight:600;">{{TAKEAWAY}}</p>
 </section>
@@ -65,7 +65,7 @@
 科普特有：误区纠正——上方红色"常见误区"+下方绿色"实际情况"对比。
 
 ```html
-<section style="margin:22px 0;overflow:hidden;">
+<section style="margin:32px 0;overflow:hidden;">
 <!-- 误区 -->
 <section style="background-color:#fef2f2;padding:12px 16px;border-left:3px solid #dc2626;">
 <p style="font-size:11px;color:#dc2626;margin:0 0 4px 0;font-weight:700;">✗ 常见误区</p>
@@ -86,7 +86,7 @@
 科普特有：类比解释——帮助读者用熟悉概念理解陌生概念。
 
 ```html
-<section style="border:1px dashed {{PRIMARY}};padding:14px 16px;margin:22px 0;">
+<section style="border:1px dashed {{PRIMARY}};padding:18px 20px;margin:32px 0;">
 <p style="font-size:11px;color:{{PRIMARY}};margin:0 0 6px 0;font-weight:700;letter-spacing:1px;">🔗 打个比方</p>
 <p style="font-size:14px;color:{{TEXT}};line-height:1.85;margin:0;">{{ANALOGY}}</p>
 </section>
@@ -108,7 +108,7 @@
 ### body_paragraph
 
 ```html
-<p style="font-size:15px;color:{{TEXT}};margin:0 0 20px 0;line-height:2.0;">{{CONTENT}}</p>
+<p style="font-size:15px;color:{{TEXT}};margin:0 0 24px 0;line-height:2.0;">{{CONTENT}}</p>
 ```
 
 ### highlight_inline
@@ -120,7 +120,7 @@
 ### blockquote
 
 ```html
-<section style="background-color:{{HIGHLIGHT_BG}};padding:14px 16px;margin:22px 0;border-left:3px solid {{SECONDARY}};">
+<section style="background-color:{{HIGHLIGHT_BG}};padding:18px 20px;margin:32px 0;border-left:3px solid {{SECONDARY}};">
 <p style="font-size:14px;color:{{TEXT}};line-height:1.85;margin:0;">{{QUOTE}}</p>
 </section>
 ```
@@ -137,7 +137,7 @@
 ### image_placeholder
 
 ```html
-<section style="border:1px dashed {{TEXT_LIGHT}};padding:42px 20px;margin:22px 0;text-align:center;">
+<section style="border:1px dashed {{TEXT_LIGHT}};padding:42px 20px;margin:32px 0;text-align:center;">
 <p style="font-size:12px;color:{{TEXT_LIGHT}};margin:0;">[ 示意图 / 原理图 ]</p>
 </section>
 ```
@@ -145,7 +145,7 @@
 ### article_footer
 
 ```html
-<section style="margin:32px 0 0 0;padding:18px 0 0 0;border-top:2px solid {{TEXT}};">
+<section style="margin:40px 0 0 0;padding:18px 0 0 0;border-top:2px solid {{TEXT}};">
 <section style="background-color:{{HIGHLIGHT_BG}};padding:12px 16px;margin:0 0 14px 0;">
 <p style="font-size:13px;color:{{TEXT}};margin:0;line-height:1.7;">📌 <span style="font-weight:600;">一句话总结：</span>{{ONE_LINE_SUMMARY}}</p>
 </section>

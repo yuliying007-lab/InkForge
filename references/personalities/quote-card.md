@@ -67,7 +67,7 @@
 ### body_paragraph
 
 ```html
-<p style="font-size:15px;color:{{TEXT}};margin:0 0 20px 0;line-height:2.0;text-align:center;">{{CONTENT}}</p>
+<p style="font-size:15px;color:{{TEXT}};margin:0 0 24px 0;line-height:2.0;text-align:center;">{{CONTENT}}</p>
 ```
 
 ### highlight_inline
@@ -79,7 +79,7 @@
 ### blockquote
 
 ```html
-<section style="border-top:1px solid {{HIGHLIGHT_BG}};border-bottom:1px solid {{HIGHLIGHT_BG}};padding:16px 20px;margin:22px 0;text-align:center;">
+<section style="border-top:1px solid {{HIGHLIGHT_BG}};border-bottom:1px solid {{HIGHLIGHT_BG}};padding:16px 20px;margin:32px 0;text-align:center;">
 <p style="font-size:14px;color:{{TEXT}};line-height:1.85;margin:0;font-style:italic;">{{QUOTE}}</p>
 </section>
 ```
@@ -87,7 +87,7 @@
 ### image_placeholder
 
 ```html
-<section style="border:1px dashed {{TEXT_LIGHT}};padding:42px 20px;margin:22px 0;text-align:center;">
+<section style="border:1px dashed {{TEXT_LIGHT}};padding:42px 20px;margin:32px 0;text-align:center;">
 <p style="font-size:12px;color:{{TEXT_LIGHT}};margin:0;">[ 配图 / 书影 ]</p>
 </section>
 ```
@@ -95,7 +95,7 @@
 ### article_footer
 
 ```html
-<section style="margin:32px 0 0 0;padding:24px 0 0 0;text-align:center;">
+<section style="margin:40px 0 0 0;padding:24px 0 0 0;text-align:center;">
 <section style="display:inline-block;width:40px;height:1px;background-color:{{PRIMARY}};margin:0 0 16px 0;opacity:0.3;"></section>
 <p style="font-size:12px;color:{{TEXT_LIGHT}};margin:0 0 6px 0;">哪句话触动了你？留言告诉我</p>
 <p style="font-size:11px;color:{{TEXT_LIGHT}};margin:0;letter-spacing:1px;">— END —</p>

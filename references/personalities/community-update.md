@@ -35,7 +35,7 @@
 社群动态特有：里程碑徽章——庆祝社群成长节点。
 
 ```html
-<section style="background-color:{{HIGHLIGHT_BG}};border:1px solid {{BORDER}};padding:16px;margin:22px 0;text-align:center;">
+<section style="background-color:{{HIGHLIGHT_BG}};border:1px solid {{BORDER}};padding:16px;margin:32px 0;text-align:center;">
 <p style="font-size:28px;margin:0 0 6px 0;">🎉</p>
 <p style="font-size:16px;font-weight:700;color:{{PRIMARY}};margin:0 0 4px 0;">{{MILESTONE}}</p>
 <p style="font-size:13px;color:{{TEXT_LIGHT}};margin:0;">{{MILESTONE_DESC}}</p>
@@ -115,7 +115,7 @@ emoji 前缀（如 🔥 热门话题、⭐ 成员聚光、📚 本周精选）�
 ### body_paragraph
 
 ```html
-<p style="font-size:15px;color:{{TEXT}};margin:0 0 20px 0;line-height:2.0;">{{CONTENT}}</p>
+<p style="font-size:15px;color:{{TEXT}};margin:0 0 24px 0;line-height:2.0;">{{CONTENT}}</p>
 ```
 
 ### highlight_inline
@@ -127,7 +127,7 @@ emoji 前缀（如 🔥 热门话题、⭐ 成员聚光、📚 本周精选）�
 ### blockquote
 
 ```html
-<section style="background-color:{{HIGHLIGHT_BG}};border-radius:8px;padding:14px 16px;margin:22px 0;">
+<section style="background-color:{{HIGHLIGHT_BG}};border-radius:8px;padding:18px 20px;margin:32px 0;">
 <p style="font-size:14px;color:{{TEXT}};line-height:1.85;margin:0;font-style:italic;">"{{QUOTE}}"</p>
 <p style="font-size:12px;color:{{TEXT_LIGHT}};margin:6px 0 0 0;">— {{AUTHOR}}</p>
 </section>
@@ -144,7 +144,7 @@ emoji 前缀（如 🔥 热门话题、⭐ 成员聚光、📚 本周精选）�
 ### separator
 
 ```html
-<section style="text-align:center;margin:28px 0;">
+<section style="text-align:center;margin:48px 0;">
 <p style="font-size:12px;color:{{TEXT_LIGHT}};margin:0;letter-spacing:6px;">· · ·</p>
 </section>
 ```
@@ -154,7 +154,7 @@ emoji 前缀（如 🔥 热门话题、⭐ 成员聚光、📚 本周精选）�
 ### image_placeholder
 
 ```html
-<section style="background-color:{{HIGHLIGHT_BG}};border-radius:8px;padding:42px 20px;margin:22px 0;text-align:center;">
+<section style="background-color:{{HIGHLIGHT_BG}};border-radius:8px;padding:42px 20px;margin:32px 0;text-align:center;">
 <p style="font-size:12px;color:{{TEXT_LIGHT}};margin:0;">[ 社群截图 / 活动照片 ]</p>
 </section>
 ```
@@ -162,7 +162,7 @@ emoji 前缀（如 🔥 热门话题、⭐ 成员聚光、📚 本周精选）�
 ### cta_block
 
 ```html
-<section style="background-color:{{PRIMARY}};border-radius:8px;padding:14px;margin:24px 0;text-align:center;">
+<section style="background-color:{{PRIMARY}};border-radius:8px;padding:14px;margin:32px 0;text-align:center;">
 <p style="font-size:15px;color:#ffffff;font-weight:700;margin:0;">加入社群，一起成长</p>
 </section>
 ```
@@ -174,7 +174,7 @@ emoji 前缀（如 🔥 热门话题、⭐ 成员聚光、📚 本周精选）�
 <p style="font-size:12px;color:{{TEXT_LIGHT}};margin:0;letter-spacing:6px;">· · ·</p>
 </section>
 
-<section style="background-color:{{HIGHLIGHT_BG}};border-radius:8px;padding:14px 16px;margin:16px 0 0 0;text-align:center;">
+<section style="background-color:{{HIGHLIGHT_BG}};border-radius:8px;padding:18px 20px;margin:16px 0 0 0;text-align:center;">
 <p style="font-size:13px;color:{{TEXT}};margin:0 0 4px 0;font-weight:600;">{{COMMUNITY_NAME}}</p>
 <p style="font-size:12px;color:{{TEXT_LIGHT}};margin:0;">下期见 · 第 {{NEXT_ISSUE}} 期</p>
 </section>

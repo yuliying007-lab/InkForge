@@ -35,7 +35,7 @@
 活动回顾特有：数据仪表横排——核心活动数据一目了然。
 
 ```html
-<section style="display:flex;gap:8px;margin:22px 0;">
+<section style="display:flex;gap:8px;margin:32px 0;">
 <section style="flex:1;background-color:{{HIGHLIGHT_BG}};padding:14px 8px;text-align:center;">
 <p style="font-size:26px;font-weight:700;color:{{PRIMARY}};margin:0 0 4px 0;line-height:1;">{{STAT_1}}</p>
 <p style="font-size:11px;color:{{TEXT_LIGHT}};margin:0;">{{STAT_LABEL_1}}</p>
@@ -101,7 +101,7 @@
 活动回顾特有：金句卡片——嘉宾精彩语录。
 
 ```html
-<section style="background-color:{{PRIMARY}};padding:18px 20px;margin:22px 0;">
+<section style="background-color:{{PRIMARY}};padding:18px 20px;margin:32px 0;">
 <p style="font-size:11px;color:rgba(255,255,255,0.5);margin:0 0 8px 0;letter-spacing:2px;">HIGHLIGHT · 金句</p>
 <p style="font-size:16px;color:#ffffff;line-height:1.85;margin:0 0 8px 0;font-weight:600;">"{{QUOTE}}"</p>
 <p style="font-size:12px;color:rgba(255,255,255,0.6);margin:0;text-align:right;">— {{SPEAKER}}</p>
@@ -119,7 +119,7 @@
 ### body_paragraph
 
 ```html
-<p style="font-size:15px;color:{{TEXT}};margin:0 0 20px 0;line-height:2.0;">{{CONTENT}}</p>
+<p style="font-size:15px;color:{{TEXT}};margin:0 0 24px 0;line-height:2.0;">{{CONTENT}}</p>
 ```
 
 ### highlight_inline
@@ -131,7 +131,7 @@
 ### blockquote
 
 ```html
-<section style="border:1px solid {{BORDER}};padding:14px 16px;margin:22px 0;">
+<section style="border:1px solid {{BORDER}};padding:18px 20px;margin:32px 0;">
 <p style="font-size:14px;color:{{TEXT}};line-height:1.85;margin:0;font-style:italic;">{{QUOTE}}</p>
 </section>
 ```
@@ -145,7 +145,7 @@
 ### image_placeholder
 
 ```html
-<section style="background-color:{{HIGHLIGHT_BG}};border:1px dashed {{BORDER}};padding:42px 20px;margin:22px 0;text-align:center;">
+<section style="background-color:{{HIGHLIGHT_BG}};border:1px dashed {{BORDER}};padding:42px 20px;margin:32px 0;text-align:center;">
 <p style="font-size:12px;color:{{TEXT_LIGHT}};margin:0;">[ 活动现场照片 ]</p>
 </section>
 ```
@@ -168,7 +168,7 @@
 ### cta_block
 
 ```html
-<section style="border:2px solid {{PRIMARY}};padding:14px;margin:24px 0;text-align:center;">
+<section style="border:2px solid {{PRIMARY}};padding:14px;margin:32px 0;text-align:center;">
 <p style="font-size:15px;color:{{PRIMARY}};font-weight:700;margin:0;">查看完整回放 →</p>
 </section>
 ```
@@ -178,7 +178,7 @@
 ### article_footer
 
 ```html
-<section style="border-top:1px solid {{BORDER}};margin:32px 0 0 0;padding:14px 0 0 0;">
+<section style="border-top:1px solid {{BORDER}};margin:40px 0 0 0;padding:14px 0 0 0;">
 <section style="display:flex;justify-content:space-between;">
 <p style="font-size:11px;color:{{TEXT_LIGHT}};margin:0;">{{ORGANIZER}}</p>
 <p style="font-size:11px;color:{{TEXT_LIGHT}};margin:0;">{{DATE}}</p>

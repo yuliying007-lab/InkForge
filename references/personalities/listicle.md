@@ -29,7 +29,7 @@
 榜单特有：顶部统计横条，概览本次盘点的范围。
 
 ```html
-<section style="display:flex;gap:0;margin:22px 0;border:1px solid {{HIGHLIGHT_BG}};">
+<section style="display:flex;gap:0;margin:32px 0;border:1px solid {{HIGHLIGHT_BG}};">
 <section style="flex:1;background-color:{{HIGHLIGHT_BG}};padding:12px 10px;text-align:center;">
 <p style="font-size:20px;font-weight:700;color:{{PRIMARY}};margin:0 0 2px 0;line-height:1;">{{STAT_1}}</p>
 <p style="font-size:10px;color:{{TEXT_LIGHT}};margin:0;">{{STAT_LABEL_1}}</p>
@@ -55,7 +55,7 @@
 <section style="background-color:{{PRIMARY}};padding:16px 14px;display:flex;align-items:center;justify-content:center;flex-shrink:0;min-width:60px;">
 <p style="font-size:28px;font-weight:800;color:#ffffff;margin:0;line-height:1;">01</p>
 </section>
-<section style="flex:1;padding:14px 16px;">
+<section style="flex:1;padding:18px 20px;">
 <p style="font-size:16px;font-weight:700;color:{{TEXT}};margin:0 0 4px 0;line-height:1.4;">{{ITEM_TITLE}}</p>
 <p style="font-size:13px;color:{{TEXT_LIGHT}};margin:0;line-height:1.7;">{{ITEM_DESC}}</p>
 </section>
@@ -98,7 +98,7 @@
 ### body_paragraph
 
 ```html
-<p style="font-size:15px;color:{{TEXT}};margin:0 0 20px 0;line-height:2.0;">{{CONTENT}}</p>
+<p style="font-size:15px;color:{{TEXT}};margin:0 0 24px 0;line-height:2.0;">{{CONTENT}}</p>
 ```
 
 ### highlight_inline
@@ -110,7 +110,7 @@
 ### blockquote
 
 ```html
-<section style="background-color:{{HIGHLIGHT_BG}};padding:14px 16px;margin:22px 0;border-left:3px solid {{PRIMARY}};">
+<section style="background-color:{{HIGHLIGHT_BG}};padding:18px 20px;margin:32px 0;border-left:3px solid {{PRIMARY}};">
 <p style="font-size:14px;color:{{TEXT}};line-height:1.85;margin:0;">{{QUOTE}}</p>
 </section>
 ```
@@ -127,7 +127,7 @@
 ### image_placeholder
 
 ```html
-<section style="border:1px dashed {{TEXT_LIGHT}};padding:42px 20px;margin:22px 0;text-align:center;">
+<section style="border:1px dashed {{TEXT_LIGHT}};padding:42px 20px;margin:32px 0;text-align:center;">
 <p style="font-size:12px;color:{{TEXT_LIGHT}};margin:0;">[ 配图 / 截图 ]</p>
 </section>
 ```
@@ -135,7 +135,7 @@
 ### article_footer
 
 ```html
-<section style="margin:32px 0 0 0;padding:18px 0 0 0;border-top:2px solid {{TEXT}};">
+<section style="margin:40px 0 0 0;padding:18px 0 0 0;border-top:2px solid {{TEXT}};">
 <p style="font-size:13px;color:{{TEXT_LIGHT}};margin:0 0 6px 0;text-align:center;">你心中的 TOP 1 是哪个？评论区见 👇</p>
 <p style="font-size:11px;color:{{TEXT_LIGHT}};margin:0;text-align:center;letter-spacing:1px;">— END —</p>
 </section>

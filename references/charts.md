@@ -11,7 +11,7 @@ Claude 根据文章中的数据/对比内容，自动选择合适的图表组件
 适用：排名、占比、对比数据。
 
 ```html
-<section style="margin:22px 0;">
+<section style="margin:32px 0;">
 <p style="font-size:14px;font-weight:700;color:{{TEXT}};margin:0 0 12px;">{{CHART_TITLE}}</p>
 <!-- 每条数据 -->
 <section style="margin-bottom:10px;">
@@ -36,7 +36,7 @@ Claude 根据文章中的数据/对比内容，自动选择合适的图表组件
 适用：核心指标、KPI 展示、数据概览。
 
 ```html
-<section style="display:flex;gap:8px;margin:22px 0;">
+<section style="display:flex;gap:8px;margin:32px 0;">
 <section style="flex:1;background:{{HIGHLIGHT_BG}};padding:16px 10px;border-radius:8px;text-align:center;">
 <p style="font-size:28px;font-weight:800;color:{{PRIMARY}};margin:0;line-height:1;">{{NUMBER}}</p>
 <p style="font-size:11px;color:{{TEXT_LIGHT}};margin:5px 0 0;">{{METRIC_NAME}}</p>
@@ -54,7 +54,7 @@ Claude 根据文章中的数据/对比内容，自动选择合适的图表组件
 适用：完成率、达标率、单个百分比指标。使用 SVG 圆环，微信兼容。
 
 ```html
-<section style="text-align:center;margin:22px 0;">
+<section style="text-align:center;margin:32px 0;">
 <svg width="120" height="120" viewBox="0 0 120 120" style="display:block;margin:0 auto;">
 <circle cx="60" cy="60" r="50" fill="none" stroke="{{HIGHLIGHT_BG}}" stroke-width="10"/>
 <circle cx="60" cy="60" r="50" fill="none" stroke="{{PRIMARY}}" stroke-width="10"
@@ -75,7 +75,7 @@ Claude 根据文章中的数据/对比内容，自动选择合适的图表组件
 适用：两个方案/产品/选项的对比。
 
 ```html
-<section style="display:flex;gap:0;margin:22px 0;overflow:hidden;border-radius:8px;border:1px solid {{HIGHLIGHT_BG}};">
+<section style="display:flex;gap:0;margin:32px 0;overflow:hidden;border-radius:8px;border:1px solid {{HIGHLIGHT_BG}};">
 <section style="flex:1;padding:16px;background:{{HIGHLIGHT_BG}};">
 <p style="font-size:12px;font-weight:700;color:{{PRIMARY}};margin:0 0 8px;letter-spacing:1px;">{{OPTION_A_LABEL}}</p>
 <p style="font-size:18px;font-weight:700;color:{{TEXT}};margin:0 0 6px;">{{OPTION_A_TITLE}}</p>
@@ -97,7 +97,7 @@ Claude 根据文章中的数据/对比内容，自动选择合适的图表组件
 适用：多项属性的逐项对比（如产品功能对比、院校对比）。
 
 ```html
-<section style="margin:22px 0;">
+<section style="margin:32px 0;">
 <!-- 表头 -->
 <section style="display:flex;background:{{PRIMARY}};padding:10px 14px;border-radius:6px 6px 0 0;">
 <p style="flex:2;font-size:12px;font-weight:700;color:#ffffff;margin:0;">对比项</p>
@@ -127,7 +127,7 @@ Claude 根据文章中的数据/对比内容，自动选择合适的图表组件
 适用：转化率、流程每一步的衰减可视化。
 
 ```html
-<section style="margin:22px 0;text-align:center;">
+<section style="margin:32px 0;text-align:center;">
 <p style="font-size:14px;font-weight:700;color:{{TEXT}};margin:0 0 14px;">{{CHART_TITLE}}</p>
 <!-- 第 1 层（最宽） -->
 <section style="background:{{PRIMARY}};padding:10px 0;margin:0 auto 4px;width:100%;border-radius:4px;">
@@ -157,7 +157,7 @@ Claude 根据文章中的数据/对比内容，自动选择合适的图表组件
 适用：多维评价、评测打分（5-6 个维度）。用水平柱状代替真正的雷达图，更兼容。
 
 ```html
-<section style="margin:22px 0;padding:16px;background:{{HIGHLIGHT_BG}};border-radius:8px;">
+<section style="margin:32px 0;padding:16px;background:{{HIGHLIGHT_BG}};border-radius:8px;">
 <p style="font-size:14px;font-weight:700;color:{{TEXT}};margin:0 0 14px;">{{CHART_TITLE}}</p>
 <!-- 维度行 -->
 <section style="display:flex;align-items:center;margin-bottom:8px;">
@@ -180,7 +180,7 @@ Claude 根据文章中的数据/对比内容，自动选择合适的图表组件
 适用：月度/季度趋势、增长数据。用阶梯条代替折线图。
 
 ```html
-<section style="margin:22px 0;">
+<section style="margin:32px 0;">
 <p style="font-size:14px;font-weight:700;color:{{TEXT}};margin:0 0 14px;">{{CHART_TITLE}}</p>
 <section style="display:flex;align-items:flex-end;gap:6px;height:120px;">
 <!-- 每个时间点一个柱 -->
@@ -203,7 +203,7 @@ Claude 根据文章中的数据/对比内容，自动选择合适的图表组件
 适用：产品评测中的优缺点列表。
 
 ```html
-<section style="display:flex;gap:10px;margin:22px 0;">
+<section style="display:flex;gap:10px;margin:32px 0;">
 <section style="flex:1;">
 <p style="font-size:12px;font-weight:700;color:#15803d;margin:0 0 8px;">✓ 优势</p>
 <p style="font-size:13px;color:{{TEXT}};margin:0 0 6px;padding-left:8px;border-left:2px solid #4ade80;line-height:1.7;">{{PRO_1}}</p>

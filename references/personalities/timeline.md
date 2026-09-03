@@ -69,7 +69,7 @@
 </section>
 <!-- 里程碑卡片 -->
 <section style="flex:1;padding:0 0 22px 0;">
-<section style="background-color:{{PRIMARY}};padding:14px 16px;margin:0 0 0 0;">
+<section style="background-color:{{PRIMARY}};padding:18px 20px;margin:0 0 0 0;">
 <p style="font-size:11px;color:rgba(255,255,255,0.6);margin:0 0 4px 0;letter-spacing:1px;font-weight:600;">⭐ 里程碑 · {{DATE}}</p>
 <p style="font-size:15px;color:#ffffff;line-height:1.7;margin:0;font-weight:600;">{{EVENT}}</p>
 </section>
@@ -80,13 +80,13 @@
 ### section_heading
 
 ```html
-<h2 style="font-size:17px;font-weight:700;color:{{TEXT}};margin:28px 0 14px 0;line-height:1.4;">{{HEADING}}</h2>
+<h2 style="font-size:17px;font-weight:700;color:{{TEXT}};margin:40px 0 16px 0;line-height:1.4;">{{HEADING}}</h2>
 ```
 
 ### body_paragraph
 
 ```html
-<p style="font-size:15px;color:{{TEXT}};margin:0 0 20px 0;line-height:2.0;">{{CONTENT}}</p>
+<p style="font-size:15px;color:{{TEXT}};margin:0 0 24px 0;line-height:2.0;">{{CONTENT}}</p>
 ```
 
 ### highlight_inline
@@ -98,7 +98,7 @@
 ### blockquote
 
 ```html
-<section style="background-color:{{HIGHLIGHT_BG}};padding:14px 16px;margin:22px 0;border-left:3px solid {{PRIMARY}};">
+<section style="background-color:{{HIGHLIGHT_BG}};padding:18px 20px;margin:32px 0;border-left:3px solid {{PRIMARY}};">
 <p style="font-size:14px;color:{{TEXT}};line-height:1.85;margin:0;">{{QUOTE}}</p>
 </section>
 ```
@@ -106,7 +106,7 @@
 ### image_placeholder
 
 ```html
-<section style="border:1px dashed {{TEXT_LIGHT}};padding:42px 20px;margin:22px 0;text-align:center;">
+<section style="border:1px dashed {{TEXT_LIGHT}};padding:42px 20px;margin:32px 0;text-align:center;">
 <p style="font-size:12px;color:{{TEXT_LIGHT}};margin:0;">[ 历史图片 / 示意图 ]</p>
 </section>
 ```

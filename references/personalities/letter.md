@@ -31,7 +31,7 @@
 <p style="font-size:11px;color:{{TEXT_LIGHT}};margin:0 0 24px 0;text-align:right;letter-spacing:1px;">〠 {{DATE}}</p>
 
 <!-- 称呼 -->
-<p style="font-size:16px;color:{{TEXT}};margin:0 0 20px 0;line-height:1.6;">{{SALUTATION}}：</p>
+<p style="font-size:16px;color:{{TEXT}};margin:0 0 24px 0;line-height:1.6;">{{SALUTATION}}：</p>
 ```
 
 `{{TO}}` 通常填"每一位读者" 或具体对象。`{{FROM}}` 填作者名/号名。`{{SALUTATION}}` 如"亲爱的你"。
@@ -86,7 +86,7 @@
 ### image_placeholder
 
 ```html
-<section style="border:1px solid #e0d8d0;padding:40px 20px;margin:24px 0;text-align:center;">
+<section style="border:1px solid #e0d8d0;padding:40px 20px;margin:32px 0;text-align:center;">
 <p style="font-size:12px;color:{{TEXT_LIGHT}};margin:0;font-style:italic;">[ 附一张照片 ]</p>
 </section>
 ```

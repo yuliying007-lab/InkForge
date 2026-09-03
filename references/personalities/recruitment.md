@@ -36,7 +36,7 @@
 招聘特有：职位信息表——关键信息一目了然。
 
 ```html
-<section style="border:1px solid {{BORDER}};margin:22px 0;font-size:14px;">
+<section style="border:1px solid {{BORDER}};margin:32px 0;font-size:14px;">
 <section style="display:flex;border-bottom:1px solid {{BORDER}};">
 <section style="width:72px;background-color:{{HIGHLIGHT_BG}};padding:10px 12px;font-weight:600;color:{{TEXT}};flex-shrink:0;">部门</section>
 <section style="flex:1;padding:10px 12px;color:{{TEXT}};">{{DEPARTMENT}}</section>
@@ -105,7 +105,7 @@
 ### body_paragraph
 
 ```html
-<p style="font-size:15px;color:{{TEXT}};margin:0 0 20px 0;line-height:2.0;">{{CONTENT}}</p>
+<p style="font-size:15px;color:{{TEXT}};margin:0 0 24px 0;line-height:2.0;">{{CONTENT}}</p>
 ```
 
 ### highlight_inline
@@ -117,7 +117,7 @@
 ### blockquote
 
 ```html
-<section style="background-color:{{HIGHLIGHT_BG}};border-left:3px solid {{PRIMARY}};padding:14px 16px;margin:22px 0;">
+<section style="background-color:{{HIGHLIGHT_BG}};border-left:3px solid {{PRIMARY}};padding:18px 20px;margin:32px 0;">
 <p style="font-size:11px;color:{{TEXT_LIGHT}};margin:0 0 6px 0;letter-spacing:1px;">TEAM VOICE</p>
 <p style="font-size:14px;color:{{TEXT}};line-height:1.85;margin:0;font-style:italic;">"{{QUOTE}}"</p>
 <p style="font-size:12px;color:{{TEXT_LIGHT}};margin:6px 0 0 0;">— {{QUOTEE}}</p>
@@ -135,7 +135,7 @@
 ### image_placeholder
 
 ```html
-<section style="background-color:{{HIGHLIGHT_BG}};border:1px dashed {{BORDER}};padding:42px 20px;margin:22px 0;text-align:center;">
+<section style="background-color:{{HIGHLIGHT_BG}};border:1px dashed {{BORDER}};padding:42px 20px;margin:32px 0;text-align:center;">
 <p style="font-size:12px;color:{{TEXT_LIGHT}};margin:0;">[ 团队照片 / 办公环境 ]</p>
 </section>
 ```
@@ -143,7 +143,7 @@
 ### cta_block
 
 ```html
-<section style="background-color:{{PRIMARY}};padding:16px;margin:24px 0;text-align:center;">
+<section style="background-color:{{PRIMARY}};padding:16px;margin:32px 0;text-align:center;">
 <p style="font-size:16px;color:#ffffff;font-weight:700;margin:0 0 4px 0;">立即投递简历</p>
 <p style="font-size:12px;color:rgba(255,255,255,0.6);margin:0;">{{APPLY_EMAIL}} · 截止 {{DEADLINE}}</p>
 </section>
@@ -152,7 +152,7 @@
 ### article_footer
 
 ```html
-<section style="border-top:1px solid {{BORDER}};margin:32px 0 0 0;padding:14px 0 0 0;">
+<section style="border-top:1px solid {{BORDER}};margin:40px 0 0 0;padding:14px 0 0 0;">
 <section style="display:flex;justify-content:space-between;">
 <p style="font-size:11px;color:{{TEXT_LIGHT}};margin:0;letter-spacing:1px;">JOB-{{JOB_ID}}</p>
 <p style="font-size:11px;color:{{TEXT_LIGHT}};margin:0;">{{COMPANY}}</p>

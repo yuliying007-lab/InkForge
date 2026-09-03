@@ -21,7 +21,7 @@
 ### summary_box
 
 ```html
-<section style="background-color:{{HIGHLIGHT_BG}};border-radius:8px;padding:18px 18px;margin:22px 0;">
+<section style="background-color:{{HIGHLIGHT_BG}};border-radius:8px;padding:18px 18px;margin:32px 0;">
 <p style="font-size:13px;color:{{PRIMARY}};font-weight:700;margin:0 0 12px 0;">本期速览</p>
 <section style="display:flex;align-items:flex-start;margin:0 0 10px 0;">
 <span style="display:inline-block;background-color:{{PRIMARY}};color:#ffffff;font-size:11px;font-weight:700;width:22px;height:22px;line-height:22px;text-align:center;border-radius:50%;flex-shrink:0;margin-right:10px;">1</span>
@@ -96,7 +96,7 @@
 ### image_placeholder
 
 ```html
-<section style="background-color:{{HIGHLIGHT_BG}};border:1px dashed {{SECONDARY}};border-radius:8px;padding:36px 16px;margin:22px 0;text-align:center;">
+<section style="background-color:{{HIGHLIGHT_BG}};border:1px dashed {{SECONDARY}};border-radius:8px;padding:36px 16px;margin:32px 0;text-align:center;">
 <p style="font-size:13px;color:{{TEXT_LIGHT}};margin:0;">[ 图片位置 ]</p>
 </section>
 ```
@@ -104,7 +104,7 @@
 ### cta_block
 
 ```html
-<section style="border:1px solid {{PRIMARY}};border-radius:8px;padding:16px;margin:28px 0;text-align:center;">
+<section style="border:1px solid {{PRIMARY}};border-radius:8px;padding:16px;margin:32px 0;text-align:center;">
 <p style="font-size:15px;color:{{PRIMARY}};font-weight:700;margin:0;">收藏本期，下周继续更新</p>
 </section>
 ```

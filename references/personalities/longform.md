@@ -54,7 +54,7 @@ Substack/竹白风格，适合长篇随笔、深度叙事、连载。
 ### blockquote
 
 ```html
-<section style="border-left:2px solid {{TEXT_LIGHT}};padding:4px 0 4px 20px;margin:24px 0;">
+<section style="border-left:2px solid {{TEXT_LIGHT}};padding:4px 0 4px 20px;margin:32px 0;">
 <p style="font-size:15px;color:{{TEXT_LIGHT}};margin:0;line-height:2.0;">{{QUOTE}}</p>
 </section>
 ```

@@ -54,7 +54,7 @@
 种草特有：编辑私人评语——轻量个人口吻。
 
 ```html
-<section style="margin:0 0 20px 0;padding:12px 16px;background-color:{{HIGHLIGHT_BG}};border-radius:8px;">
+<section style="margin:0 0 24px 0;padding:12px 16px;background-color:{{HIGHLIGHT_BG}};border-radius:8px;">
 <p style="font-size:13px;color:{{TEXT}};line-height:1.7;margin:0;"><span style="font-weight:700;color:{{PRIMARY}};">编辑说：</span>{{NOTE}}</p>
 </section>
 ```
@@ -71,7 +71,7 @@
 ### body_paragraph
 
 ```html
-<p style="font-size:15px;color:{{TEXT}};margin:0 0 20px 0;line-height:2.0;">{{CONTENT}}</p>
+<p style="font-size:15px;color:{{TEXT}};margin:0 0 24px 0;line-height:2.0;">{{CONTENT}}</p>
 ```
 
 ### highlight_inline
@@ -83,7 +83,7 @@
 ### blockquote
 
 ```html
-<section style="padding:14px 16px;margin:22px 0;border-left:3px solid {{SECONDARY}};background-color:{{HIGHLIGHT_BG}};border-radius:0 8px 8px 0;">
+<section style="padding:18px 20px;margin:32px 0;border-left:3px solid {{SECONDARY}};background-color:{{HIGHLIGHT_BG}};border-radius:0 8px 8px 0;">
 <p style="font-size:14px;color:{{TEXT}};line-height:1.85;margin:0;">{{QUOTE}}</p>
 </section>
 ```
@@ -91,7 +91,7 @@
 ### image_placeholder
 
 ```html
-<section style="border:1px dashed {{TEXT_LIGHT}};padding:42px 20px;margin:22px 0;text-align:center;border-radius:8px;">
+<section style="border:1px dashed {{TEXT_LIGHT}};padding:42px 20px;margin:32px 0;text-align:center;border-radius:8px;">
 <p style="font-size:12px;color:{{TEXT_LIGHT}};margin:0;">[ 产品实拍 / 使用场景 ]</p>
 </section>
 ```
@@ -99,7 +99,7 @@
 ### article_footer
 
 ```html
-<section style="margin:32px 0 0 0;padding:18px 0 0 0;border-top:1px solid {{HIGHLIGHT_BG}};">
+<section style="margin:40px 0 0 0;padding:18px 0 0 0;border-top:1px solid {{HIGHLIGHT_BG}};">
 <p style="font-size:13px;color:{{TEXT_LIGHT}};margin:0 0 6px 0;text-align:center;">你用过哪件？还有什么好物想推荐？👇</p>
 <p style="font-size:11px;color:{{TEXT_LIGHT}};margin:0;text-align:center;letter-spacing:1px;">— END —</p>
 </section>

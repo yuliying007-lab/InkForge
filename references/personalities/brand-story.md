@@ -27,7 +27,7 @@
 品牌故事特有：品牌宣言——全宽主色块+白色大字。
 
 ```html
-<section style="background-color:{{PRIMARY}};padding:24px 20px;margin:24px 0;text-align:center;">
+<section style="background-color:{{PRIMARY}};padding:24px 20px;margin:32px 0;text-align:center;">
 <p style="font-size:28px;color:rgba(255,255,255,0.2);margin:0 0 4px 0;line-height:1;font-weight:700;">"</p>
 <p style="font-size:17px;color:#ffffff;line-height:1.8;margin:0 0 4px 0;font-weight:600;">{{TAGLINE}}</p>
 <p style="font-size:28px;color:rgba(255,255,255,0.2);margin:0;line-height:1;font-weight:700;">"</p>
@@ -52,7 +52,7 @@
 ### body_paragraph
 
 ```html
-<p style="font-size:15px;color:{{TEXT}};margin:0 0 20px 0;line-height:2.0;">{{CONTENT}}</p>
+<p style="font-size:15px;color:{{TEXT}};margin:0 0 24px 0;line-height:2.0;">{{CONTENT}}</p>
 ```
 
 ### testimony_card
@@ -60,7 +60,7 @@
 品牌故事特有：客户证言卡。
 
 ```html
-<section style="display:flex;align-items:flex-start;margin:22px 0;padding:16px;background-color:{{HIGHLIGHT_BG}};border-radius:8px;">
+<section style="display:flex;align-items:flex-start;margin:32px 0;padding:16px;background-color:{{HIGHLIGHT_BG}};border-radius:8px;">
 <section style="width:44px;height:44px;background-color:{{BORDER}};border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
 <p style="font-size:16px;margin:0;">💬</p>
 </section>
@@ -96,7 +96,7 @@
 ### blockquote
 
 ```html
-<section style="padding:14px 20px;margin:22px 0;text-align:center;">
+<section style="padding:14px 20px;margin:32px 0;text-align:center;">
 <p style="font-size:14px;color:{{TEXT}};line-height:1.85;margin:0;font-style:italic;">{{QUOTE}}</p>
 </section>
 ```
@@ -112,7 +112,7 @@
 ### image_placeholder
 
 ```html
-<section style="background-color:{{HIGHLIGHT_BG}};border-radius:8px;padding:48px 20px;margin:22px 0;text-align:center;">
+<section style="background-color:{{HIGHLIGHT_BG}};border-radius:8px;padding:48px 20px;margin:32px 0;text-align:center;">
 <p style="font-size:12px;color:{{TEXT_LIGHT}};margin:0;font-style:italic;">[ 品牌 / 团队 / 客户 ]</p>
 </section>
 ```
@@ -120,7 +120,7 @@
 ### cta_block
 
 ```html
-<section style="background-color:{{PRIMARY}};padding:14px;margin:24px 0;text-align:center;">
+<section style="background-color:{{PRIMARY}};padding:14px;margin:32px 0;text-align:center;">
 <p style="font-size:15px;color:#ffffff;font-weight:700;margin:0;">了解更多关于 {{BRAND}} 的故事</p>
 </section>
 ```

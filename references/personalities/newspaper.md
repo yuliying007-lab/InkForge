@@ -35,7 +35,7 @@
 ```html
 <!-- 章节标签 -->
 <p style="font-size:11px;color:{{TEXT_LIGHT}};margin:40px 0 8px 0;letter-spacing:3px;text-transform:uppercase;">CHAPTER {{ROMAN}}</p>
-<h2 style="font-size:18px;font-weight:700;color:{{TEXT}};margin:0 0 20px 0;line-height:1.4;font-family:Georgia,'Songti SC','SimSun',serif;">{{HEADING}}</h2>
+<h2 style="font-size:18px;font-weight:700;color:{{TEXT}};margin:0 0 24px 0;line-height:1.4;font-family:Georgia,'Songti SC','SimSun',serif;">{{HEADING}}</h2>
 ```
 
 ### body_paragraph
@@ -62,7 +62,7 @@
 
 ```html
 <!-- 引用（居中衬线体） -->
-<section style="margin:28px 0;padding:20px 0;border-top:1px solid {{TEXT_LIGHT}};border-bottom:1px solid {{TEXT_LIGHT}};">
+<section style="margin:32px 0;padding:20px 0;border-top:1px solid {{TEXT_LIGHT}};border-bottom:1px solid {{TEXT_LIGHT}};">
 <p style="font-size:16px;color:{{TEXT}};margin:0 0 8px 0;line-height:1.8;text-align:center;font-style:italic;font-family:Georgia,'Songti SC','SimSun',serif;">"{{QUOTE}}"</p>
 <p style="font-size:11px;color:{{TEXT_LIGHT}};margin:0;text-align:center;letter-spacing:2px;text-transform:uppercase;">— FROM THE ARTICLE</p>
 </section>
@@ -85,7 +85,7 @@
 ### image_placeholder
 
 ```html
-<section style="background-color:{{HIGHLIGHT_BG}};border:1px solid #e8e0d8;padding:48px 20px;margin:24px 0;text-align:center;">
+<section style="background-color:{{HIGHLIGHT_BG}};border:1px solid #e8e0d8;padding:48px 20px;margin:32px 0;text-align:center;">
 <p style="font-size:12px;color:{{TEXT_LIGHT}};margin:0;font-style:italic;">[ 图片位置 ]</p>
 </section>
 ```

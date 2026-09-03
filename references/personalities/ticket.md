@@ -58,7 +58,7 @@
 ### body_paragraph
 
 ```html
-<p style="font-size:15px;color:{{TEXT}};margin:0 0 20px 0;line-height:2.0;">{{CONTENT}}</p>
+<p style="font-size:15px;color:{{TEXT}};margin:0 0 24px 0;line-height:2.0;">{{CONTENT}}</p>
 ```
 
 ### highlight_inline
@@ -71,7 +71,7 @@
 
 ```html
 <!-- 引用（虚线边框卡片） -->
-<section style="border:2px dashed {{TEXT_LIGHT}};border-radius:8px;padding:16px 20px;margin:24px 0;">
+<section style="border:2px dashed {{TEXT_LIGHT}};border-radius:8px;padding:16px 20px;margin:32px 0;">
 <p style="font-size:11px;color:{{PRIMARY}};margin:0 0 8px 0;letter-spacing:1px;">— QUOTE / 引言 —</p>
 <p style="font-size:14px;color:{{TEXT}};margin:0;line-height:1.8;font-style:italic;">"{{QUOTE}}"</p>
 </section>
@@ -86,13 +86,13 @@
 ### separator
 
 ```html
-<section style="border-bottom:2px dashed #d0d0d0;margin:28px 0;"></section>
+<section style="border-bottom:2px dashed #d0d0d0;margin:48px 0;"></section>
 ```
 
 ### image_placeholder
 
 ```html
-<section style="background-color:{{HIGHLIGHT_BG}};border:2px dashed #d0d0d0;border-radius:8px;padding:40px 20px;margin:24px 0;text-align:center;">
+<section style="background-color:{{HIGHLIGHT_BG}};border:2px dashed #d0d0d0;border-radius:8px;padding:40px 20px;margin:32px 0;text-align:center;">
 <p style="font-size:12px;color:{{TEXT_LIGHT}};margin:0;">[ 图片位置 ]</p>
 </section>
 ```

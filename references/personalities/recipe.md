@@ -43,7 +43,7 @@
 食谱特有：核心组件——食材清单。奇偶行交替底色。
 
 ```html
-<section style="margin:22px 0;">
+<section style="margin:32px 0;">
 <section style="background-color:{{PRIMARY}};padding:10px 14px;">
 <p style="font-size:13px;font-weight:700;color:#ffffff;margin:0;letter-spacing:1px;">🥬 食材清单</p>
 </section>
@@ -80,7 +80,7 @@
 食谱特有：小贴士——烹饪窍门或替代建议。
 
 ```html
-<section style="margin:20px 0;padding:14px 16px;background-color:{{HIGHLIGHT_BG}};border-radius:8px;">
+<section style="margin:20px 0;padding:18px 20px;background-color:{{HIGHLIGHT_BG}};border-radius:8px;">
 <p style="font-size:12px;color:{{PRIMARY}};margin:0 0 4px 0;font-weight:700;">💡 小贴士</p>
 <p style="font-size:14px;color:{{TEXT}};line-height:1.7;margin:0;">{{TIP}}</p>
 </section>
@@ -89,13 +89,13 @@
 ### section_heading
 
 ```html
-<h2 style="font-size:17px;font-weight:700;color:{{TEXT}};margin:28px 0 14px 0;line-height:1.4;">{{HEADING}}</h2>
+<h2 style="font-size:17px;font-weight:700;color:{{TEXT}};margin:40px 0 16px 0;line-height:1.4;">{{HEADING}}</h2>
 ```
 
 ### body_paragraph
 
 ```html
-<p style="font-size:15px;color:{{TEXT}};margin:0 0 20px 0;line-height:2.0;">{{CONTENT}}</p>
+<p style="font-size:15px;color:{{TEXT}};margin:0 0 24px 0;line-height:2.0;">{{CONTENT}}</p>
 ```
 
 ### highlight_inline
@@ -107,7 +107,7 @@
 ### blockquote
 
 ```html
-<section style="background-color:{{HIGHLIGHT_BG}};padding:14px 16px;margin:22px 0;border-left:3px solid {{SECONDARY}};">
+<section style="background-color:{{HIGHLIGHT_BG}};padding:18px 20px;margin:32px 0;border-left:3px solid {{SECONDARY}};">
 <p style="font-size:14px;color:{{TEXT}};line-height:1.85;margin:0;">{{QUOTE}}</p>
 </section>
 ```
@@ -123,7 +123,7 @@
 ### article_footer
 
 ```html
-<section style="margin:32px 0 0 0;padding:18px 0 0 0;border-top:1px solid {{HIGHLIGHT_BG}};">
+<section style="margin:40px 0 0 0;padding:18px 0 0 0;border-top:1px solid {{HIGHLIGHT_BG}};">
 <p style="font-size:13px;color:{{TEXT_LIGHT}};margin:0 0 6px 0;text-align:center;">做出来了记得拍照给我看 📸</p>
 <p style="font-size:11px;color:{{TEXT_LIGHT}};margin:0;text-align:center;letter-spacing:1px;">— END —</p>
 </section>

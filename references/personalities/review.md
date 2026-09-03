@@ -28,7 +28,7 @@
 测评特有：核心组件——大字综合评分+评级文字。
 
 ```html
-<section style="display:flex;align-items:center;margin:24px 0;padding:20px;background-color:{{HIGHLIGHT_BG}};">
+<section style="display:flex;align-items:center;margin:32px 0;padding:20px;background-color:{{HIGHLIGHT_BG}};">
 <section style="flex-shrink:0;margin-right:20px;text-align:center;">
 <p style="font-size:48px;font-weight:800;color:{{PRIMARY}};margin:0;line-height:1;">{{SCORE}}</p>
 <p style="font-size:11px;color:{{TEXT_LIGHT}};margin:4px 0 0 0;">/ 10</p>
@@ -63,7 +63,7 @@
 测评特有：优缺点双栏对比。
 
 ```html
-<section style="display:flex;gap:10px;margin:22px 0;">
+<section style="display:flex;gap:10px;margin:32px 0;">
 <!-- 优点 -->
 <section style="flex:1;padding:14px;">
 <p style="font-size:12px;font-weight:700;color:#15803d;margin:0 0 10px 0;letter-spacing:1px;">✓ 优点</p>
@@ -88,7 +88,7 @@
 测评特有：参数规格表——奇偶行交替底色。
 
 ```html
-<section style="margin:22px 0;font-size:13px;">
+<section style="margin:32px 0;font-size:13px;">
 <section style="display:flex;background-color:{{PRIMARY}};padding:8px 12px;">
 <p style="flex:1;color:#ffffff;margin:0;font-weight:700;">参数</p>
 <p style="flex:1;color:#ffffff;margin:0;font-weight:700;text-align:right;">数值</p>
@@ -111,7 +111,7 @@
 测评特有：最终结论裁决——大字结论+一句话理由。
 
 ```html
-<section style="border:2px solid {{PRIMARY}};margin:24px 0;overflow:hidden;">
+<section style="border:2px solid {{PRIMARY}};margin:32px 0;overflow:hidden;">
 <section style="background-color:{{PRIMARY}};padding:10px 16px;">
 <p style="font-size:12px;color:#ffffff;margin:0;font-weight:700;letter-spacing:2px;">最终结论</p>
 </section>
@@ -127,13 +127,13 @@
 ### section_heading
 
 ```html
-<h2 style="font-size:17px;font-weight:700;color:{{TEXT}};margin:28px 0 14px 0;line-height:1.4;padding-bottom:8px;border-bottom:2px solid {{PRIMARY}};">{{HEADING}}</h2>
+<h2 style="font-size:17px;font-weight:700;color:{{TEXT}};margin:40px 0 16px 0;line-height:1.4;padding-bottom:8px;border-bottom:2px solid {{PRIMARY}};">{{HEADING}}</h2>
 ```
 
 ### body_paragraph
 
 ```html
-<p style="font-size:15px;color:{{TEXT}};margin:0 0 20px 0;line-height:2.0;">{{CONTENT}}</p>
+<p style="font-size:15px;color:{{TEXT}};margin:0 0 24px 0;line-height:2.0;">{{CONTENT}}</p>
 ```
 
 ### highlight_inline
@@ -145,7 +145,7 @@
 ### blockquote
 
 ```html
-<section style="background-color:{{HIGHLIGHT_BG}};padding:14px 16px;margin:22px 0;">
+<section style="background-color:{{HIGHLIGHT_BG}};padding:18px 20px;margin:32px 0;">
 <p style="font-size:11px;color:{{PRIMARY}};margin:0 0 6px 0;letter-spacing:1px;font-weight:600;">测评备注</p>
 <p style="font-size:14px;color:{{TEXT}};line-height:1.85;margin:0;">{{QUOTE}}</p>
 </section>
@@ -154,7 +154,7 @@
 ### image_placeholder
 
 ```html
-<section style="border:1px dashed {{TEXT_LIGHT}};padding:42px 20px;margin:22px 0;text-align:center;">
+<section style="border:1px dashed {{TEXT_LIGHT}};padding:42px 20px;margin:32px 0;text-align:center;">
 <p style="font-size:12px;color:{{TEXT_LIGHT}};margin:0;">[ 产品实拍 / 对比图 ]</p>
 </section>
 ```
@@ -162,7 +162,7 @@
 ### article_footer
 
 ```html
-<section style="margin:32px 0 0 0;padding:18px 0 0 0;border-top:2px solid {{TEXT}};">
+<section style="margin:40px 0 0 0;padding:18px 0 0 0;border-top:2px solid {{TEXT}};">
 <p style="font-size:13px;color:{{TEXT_LIGHT}};margin:0 0 6px 0;text-align:center;">你用过吗？评论区说说你的体验 👇</p>
 <p style="font-size:11px;color:{{TEXT_LIGHT}};margin:0;text-align:center;letter-spacing:1px;">— END —</p>
 </section>

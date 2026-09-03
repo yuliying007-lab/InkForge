@@ -46,7 +46,7 @@
 政务特有：汉字大写编号标题——"一、"、"二、"、"三、"格式。
 
 ```html
-<section style="margin:28px 0 14px 0;">
+<section style="margin:40px 0 16px 0;">
 <p style="font-size:17px;font-weight:700;color:{{TEXT}};margin:0;line-height:1.4;">{{CN_NUM}}、{{HEADING}}</p>
 <section style="width:40px;height:2px;background-color:{{PRIMARY}};margin:8px 0 0 0;"></section>
 </section>
@@ -78,7 +78,7 @@
 政务特有：政策原文摘录——灰底+引号装饰。
 
 ```html
-<section style="margin:22px 0;padding:16px 18px;background-color:{{HIGHLIGHT_BG}};border-left:3px solid {{PRIMARY}};">
+<section style="margin:32px 0;padding:16px 18px;background-color:{{HIGHLIGHT_BG}};border-left:3px solid {{PRIMARY}};">
 <p style="font-size:11px;color:{{PRIMARY}};margin:0 0 6px 0;font-weight:600;letter-spacing:1px;">📄 原文摘录</p>
 <p style="font-size:14px;color:{{TEXT}};line-height:1.85;margin:0;font-style:italic;">{{QUOTE}}</p>
 <p style="font-size:11px;color:{{TEXT_LIGHT}};margin:6px 0 0 0;">—— {{SOURCE}}</p>
@@ -88,7 +88,7 @@
 ### body_paragraph
 
 ```html
-<p style="font-size:15px;color:{{TEXT}};margin:0 0 20px 0;line-height:2.0;text-indent:2em;">{{CONTENT}}</p>
+<p style="font-size:15px;color:{{TEXT}};margin:0 0 24px 0;line-height:2.0;text-indent:2em;">{{CONTENT}}</p>
 ```
 
 注意 `text-indent:2em` ——政务文稿首行缩进。
@@ -102,7 +102,7 @@
 ### separator
 
 ```html
-<section style="margin:24px 0;text-align:center;">
+<section style="margin:32px 0;text-align:center;">
 <section style="display:inline-block;width:200px;height:1px;background-color:{{PRIMARY}};opacity:0.3;"></section>
 </section>
 ```
@@ -110,7 +110,7 @@
 ### image_placeholder
 
 ```html
-<section style="border:1px dashed {{TEXT_LIGHT}};padding:42px 20px;margin:22px 0;text-align:center;">
+<section style="border:1px dashed {{TEXT_LIGHT}};padding:42px 20px;margin:32px 0;text-align:center;">
 <p style="font-size:12px;color:{{TEXT_LIGHT}};margin:0;">[ 文件扫描件 / 流程图 ]</p>
 </section>
 ```

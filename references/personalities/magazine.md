@@ -52,7 +52,7 @@
 
 ```html
 <!-- 大引号引用 -->
-<section style="padding:20px 24px;margin:28px 0;">
+<section style="padding:20px 24px;margin:32px 0;">
 <p style="font-size:36px;color:{{PRIMARY}};margin:0 0 4px 0;line-height:1;">「</p>
 <p style="font-size:15px;color:{{TEXT}};margin:0 0 4px 20px;line-height:1.8;">{{QUOTE}}</p>
 </section>
@@ -75,7 +75,7 @@
 ### image_placeholder
 
 ```html
-<section style="background-color:{{HIGHLIGHT_BG}};padding:48px 20px;margin:28px 0;text-align:center;border-radius:4px;">
+<section style="background-color:{{HIGHLIGHT_BG}};padding:48px 20px;margin:32px 0;text-align:center;border-radius:4px;">
 <p style="font-size:12px;color:{{TEXT_LIGHT}};margin:0 0 0 0;">图片位置</p>
 </section>
 <p style="font-size:11px;color:{{TEXT_LIGHT}};margin:8px 0 0 0;letter-spacing:1px;">PHOTO · {{CAPTION}}</p>
@@ -86,7 +86,7 @@
 ```html
 <!-- 分隔 -->
 <p style="font-size:12px;color:{{TEXT_LIGHT}};margin:36px 0 8px 0;text-align:center;">—— ✦ ——</p>
-<section style="border-bottom:1px solid #e5e5e5;margin:0 0 20px 0;"></section>
+<section style="border-bottom:1px solid #e5e5e5;margin:0 0 24px 0;"></section>
 
 <!-- CTA -->
 <p style="font-size:12px;color:{{TEXT_LIGHT}};margin:0 0 4px 0;text-align:center;letter-spacing:3px;">THANKS FOR READING</p>

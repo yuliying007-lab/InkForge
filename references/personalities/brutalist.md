@@ -14,7 +14,7 @@
 <section style="background-color:{{BG}};border:3px solid {{TEXT}};padding:24px 20px 20px;font-family:'SF Mono','Fira Code','Courier New',Consolas,monospace;">
 
 <!-- 文件标题行 -->
-<section style="display:flex;justify-content:space-between;align-items:center;margin:0 0 20px 0;">
+<section style="display:flex;justify-content:space-between;align-items:center;margin:0 0 24px 0;">
 <p style="font-size:12px;font-weight:700;color:{{TEXT}};margin:0;letter-spacing:1px;">FILE_NO.{{ISSUE}}</p>
 <p style="font-size:12px;font-weight:700;color:{{TEXT}};margin:0;letter-spacing:1px;">FOCUS.TXT</p>
 </section>
@@ -22,7 +22,7 @@
 <!-- 标题（断行、大字） -->
 <h1 style="font-size:28px;font-weight:900;color:{{TEXT}};margin:0 0 4px 0;line-height:1.2;">{{TITLE_WORD1}}</h1>
 <h1 style="font-size:28px;font-weight:900;color:{{TEXT}};margin:0 0 4px 0;line-height:1.2;">{{TITLE_WORD2}}</h1>
-<h1 style="font-size:28px;font-weight:900;color:{{TEXT}};margin:0 0 20px 0;line-height:1.2;">{{TITLE_WORD3}}</h1>
+<h1 style="font-size:28px;font-weight:900;color:{{TEXT}};margin:0 0 24px 0;line-height:1.2;">{{TITLE_WORD3}}</h1>
 
 <!-- 副标题 -->
 <p style="font-size:12px;color:{{TEXT_LIGHT}};margin:0 0 0 0;line-height:1.6;letter-spacing:2px;">{{SUBTITLE}}</p>
@@ -39,7 +39,7 @@
 ### body_paragraph
 
 ```html
-<p style="font-size:15px;color:{{TEXT}};margin:0 0 20px 0;line-height:1.9;">{{CONTENT}}</p>
+<p style="font-size:15px;color:{{TEXT}};margin:0 0 24px 0;line-height:1.9;">{{CONTENT}}</p>
 ```
 
 ### highlight_inline
@@ -54,7 +54,7 @@
 
 ```html
 <!-- 引用（粗边框） -->
-<section style="border:3px solid {{TEXT}};padding:16px 20px;margin:24px 0;">
+<section style="border:3px solid {{TEXT}};padding:16px 20px;margin:32px 0;">
 <p style="font-size:12px;color:{{TEXT_LIGHT}};margin:0 0 8px 0;letter-spacing:1px;font-family:'SF Mono','Fira Code','Courier New',Consolas,monospace;">/* QUOTE */</p>
 <p style="font-size:15px;color:{{TEXT}};margin:0;line-height:1.8;font-weight:600;">"{{QUOTE}}"</p>
 </section>
@@ -73,13 +73,13 @@
 
 ```html
 <!-- 警戒条（斜条纹用重复字符模拟） -->
-<p style="font-size:10px;color:{{TEXT_LIGHT}};margin:28px 0;letter-spacing:2px;text-align:center;font-family:'SF Mono',monospace;">▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓</p>
+<p style="font-size:10px;color:{{TEXT_LIGHT}};margin:48px 0;letter-spacing:2px;text-align:center;font-family:'SF Mono',monospace;">▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓</p>
 ```
 
 ### image_placeholder
 
 ```html
-<section style="border:3px solid {{TEXT}};padding:48px 20px;margin:24px 0;text-align:center;">
+<section style="border:3px solid {{TEXT}};padding:48px 20px;margin:32px 0;text-align:center;">
 <p style="font-size:14px;font-weight:700;color:{{TEXT}};margin:0;font-family:'SF Mono',monospace;">[ IMG ]</p>
 </section>
 ```

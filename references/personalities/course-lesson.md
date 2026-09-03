@@ -33,7 +33,7 @@
 课程讲义特有：学习目标清单——课程开头的"本节你将学到"。
 
 ```html
-<section style="border:2px solid {{PRIMARY}};padding:16px 18px;margin:22px 0;">
+<section style="border:2px solid {{PRIMARY}};padding:16px 18px;margin:32px 0;">
 <p style="font-size:11px;color:{{PRIMARY}};margin:0 0 10px 0;letter-spacing:2px;font-weight:700;">LEARNING OBJECTIVES · 学习目标</p>
 <p style="font-size:14px;color:{{TEXT}};margin:0 0 8px 0;line-height:1.8;padding-left:4px;">🎯&nbsp; {{OBJECTIVE_1}}</p>
 <p style="font-size:14px;color:{{TEXT}};margin:0 0 8px 0;line-height:1.8;padding-left:4px;">🎯&nbsp; {{OBJECTIVE_2}}</p>
@@ -46,7 +46,7 @@
 课程讲义特有：板书框——深底白字，模拟黑板上的关键板书。
 
 ```html
-<section style="background-color:#2d3a2e;padding:18px 20px;margin:22px 0;border-radius:4px;">
+<section style="background-color:#2d3a2e;padding:18px 20px;margin:32px 0;border-radius:4px;">
 <p style="font-size:11px;color:rgba(255,255,255,0.45);margin:0 0 8px 0;letter-spacing:2px;">BLACKBOARD · 板书</p>
 <p style="font-size:16px;color:#f0ede6;line-height:1.85;margin:0;font-weight:600;">{{BOARD_CONTENT}}</p>
 </section>
@@ -57,7 +57,7 @@
 课程讲义特有：随堂测验卡片——课中穿插的思考题。
 
 ```html
-<section style="background-color:{{HIGHLIGHT_BG}};border-left:3px solid {{SECONDARY}};padding:14px 16px;margin:22px 0;">
+<section style="background-color:{{HIGHLIGHT_BG}};border-left:3px solid {{SECONDARY}};padding:18px 20px;margin:32px 0;">
 <p style="font-size:11px;color:{{SECONDARY}};margin:0 0 8px 0;letter-spacing:1px;font-weight:700;">🤔 随堂思考</p>
 <p style="font-size:15px;color:{{TEXT}};line-height:1.85;margin:0 0 10px 0;">{{QUESTION}}</p>
 <section style="background-color:{{BG}};border:1px dashed {{BORDER}};padding:10px 14px;">
@@ -95,7 +95,7 @@
 ### body_paragraph
 
 ```html
-<p style="font-size:15px;color:{{TEXT}};margin:0 0 20px 0;line-height:2.0;">{{CONTENT}}</p>
+<p style="font-size:15px;color:{{TEXT}};margin:0 0 24px 0;line-height:2.0;">{{CONTENT}}</p>
 ```
 
 ### highlight_inline
@@ -109,7 +109,7 @@
 ### blockquote
 
 ```html
-<section style="background-color:{{HIGHLIGHT_BG}};border-left:3px solid {{PRIMARY}};padding:12px 16px;margin:22px 0;">
+<section style="background-color:{{HIGHLIGHT_BG}};border-left:3px solid {{PRIMARY}};padding:12px 16px;margin:32px 0;">
 <p style="font-size:14px;color:{{TEXT}};line-height:1.85;margin:0;">{{QUOTE}}</p>
 </section>
 ```
@@ -123,13 +123,13 @@
 ### separator
 
 ```html
-<section style="border-bottom:1px dashed {{BORDER}};margin:28px 0;"></section>
+<section style="border-bottom:1px dashed {{BORDER}};margin:48px 0;"></section>
 ```
 
 ### image_placeholder
 
 ```html
-<section style="background-color:#2d3a2e;border-radius:4px;padding:42px 20px;margin:22px 0;text-align:center;">
+<section style="background-color:#2d3a2e;border-radius:4px;padding:42px 20px;margin:32px 0;text-align:center;">
 <p style="font-size:12px;color:rgba(255,255,255,0.45);margin:0;">[ 示意图 / 流程图 / 板书截图 ]</p>
 </section>
 ```
@@ -139,7 +139,7 @@
 ### cta_block
 
 ```html
-<section style="background-color:{{PRIMARY}};border-radius:4px;padding:14px;margin:24px 0;text-align:center;">
+<section style="background-color:{{PRIMARY}};border-radius:4px;padding:14px;margin:32px 0;text-align:center;">
 <p style="font-size:15px;color:#ffffff;font-weight:700;margin:0;">收藏本课，随时复习</p>
 </section>
 ```

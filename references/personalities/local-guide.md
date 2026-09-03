@@ -41,7 +41,7 @@
 
 ```html
 <!-- 明信片信息 -->
-<section style="background-color:{{HIGHLIGHT_BG}};border-radius:10px;padding:16px 18px;margin:22px 0;">
+<section style="background-color:{{HIGHLIGHT_BG}};border-radius:10px;padding:16px 18px;margin:32px 0;">
 <p style="font-size:14px;color:{{TEXT}};line-height:2.2;margin:0 0 0 0;">📍&nbsp; {{LOCATION}}</p>
 <p style="font-size:14px;color:{{TEXT}};line-height:2.2;margin:0 0 0 0;">💰&nbsp; 人均 {{PRICE}}</p>
 <p style="font-size:14px;color:{{TEXT}};line-height:2.2;margin:0 0 0 0;">🚇&nbsp; {{ROUTE}}</p>
@@ -99,7 +99,7 @@ emoji 做图标前缀——无需额外图片，微信原生支持。`{{HOURS}}`
 ### body_paragraph
 
 ```html
-<p style="font-size:15px;color:{{TEXT}};margin:0 0 20px 0;line-height:2.0;">{{CONTENT}}</p>
+<p style="font-size:15px;color:{{TEXT}};margin:0 0 24px 0;line-height:2.0;">{{CONTENT}}</p>
 ```
 
 ### highlight_inline
@@ -114,7 +114,7 @@ emoji 做图标前缀——无需额外图片，微信原生支持。`{{HOURS}}`
 
 ```html
 <!-- 本地人说 -->
-<section style="background-color:{{HIGHLIGHT_BG}};border-radius:10px;padding:14px 16px;margin:22px 0;">
+<section style="background-color:{{HIGHLIGHT_BG}};border-radius:10px;padding:18px 20px;margin:32px 0;">
 <p style="font-size:11px;color:{{PRIMARY}};margin:0 0 6px 0;font-weight:600;">🗣 本地人说</p>
 <p style="font-size:14px;color:{{TEXT}};line-height:1.85;margin:0;font-style:italic;">{{QUOTE}}</p>
 </section>
@@ -131,7 +131,7 @@ emoji 做图标前缀——无需额外图片，微信原生支持。`{{HOURS}}`
 ### image_placeholder
 
 ```html
-<section style="background-color:{{HIGHLIGHT_BG}};border-radius:10px;padding:44px 20px;margin:22px 0;text-align:center;">
+<section style="background-color:{{HIGHLIGHT_BG}};border-radius:10px;padding:44px 20px;margin:32px 0;text-align:center;">
 <p style="font-size:11px;color:{{TEXT_LIGHT}};margin:0 0 4px 0;">📷</p>
 <p style="font-size:12px;color:{{TEXT_LIGHT}};margin:0;">[ 实拍图位置 ]</p>
 </section>
@@ -140,7 +140,7 @@ emoji 做图标前缀——无需额外图片，微信原生支持。`{{HOURS}}`
 ### cta_block
 
 ```html
-<section style="border:2px solid {{PRIMARY}};border-radius:10px;padding:14px;margin:24px 0;text-align:center;">
+<section style="border:2px solid {{PRIMARY}};border-radius:10px;padding:14px;margin:32px 0;text-align:center;">
 <p style="font-size:15px;color:{{PRIMARY}};font-weight:700;margin:0;">📌 收藏这份指南，周末用得上</p>
 </section>
 ```
