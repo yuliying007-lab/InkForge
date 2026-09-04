@@ -82,11 +82,11 @@
 <p style="font-size:14px;color:{{TEXT_LIGHT}};margin:32px 0;text-align:center;line-height:1;">❦&nbsp;&nbsp;&nbsp;&nbsp;❦&nbsp;&nbsp;&nbsp;&nbsp;❦</p>
 ```
 
-### image_placeholder
+### decorative_illustration
 
 ```html
 <section style="background-color:{{HIGHLIGHT_BG}};border:1px solid #e8e0d8;padding:48px 20px;margin:32px 0;text-align:center;">
-<p style="font-size:12px;color:{{TEXT_LIGHT}};margin:0;font-style:italic;">[ 图片位置 ]</p>
+<p style="font-size:12px;color:{{TEXT_LIGHT}};margin:0;font-style:italic;">[ Claude 生成装饰插画位置 ]</p>
 </section>
 ```
 

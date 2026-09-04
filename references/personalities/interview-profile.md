@@ -129,11 +129,11 @@
 <p style="font-size:15px;color:{{TEXT}};margin:0 0 12px 0;line-height:1.85;padding-left:4px;">◆&nbsp; {{ITEM}}</p>
 ```
 
-### image_placeholder
+### decorative_illustration
 
 ```html
 <section style="background-color:{{HIGHLIGHT_BG}};border-radius:10px;padding:48px 20px;margin:32px 0;text-align:center;">
-<p style="font-size:12px;color:{{TEXT_LIGHT}};margin:0;font-style:italic;">[ 人物肖像 / 访谈现场 ]</p>
+<p style="font-size:12px;color:{{TEXT_LIGHT}};margin:0;font-style:italic;">[ Claude 生成装饰插画位置 ]</p>
 </section>
 ```
 

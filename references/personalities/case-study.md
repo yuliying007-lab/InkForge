@@ -115,11 +115,11 @@
 <p style="font-size:15px;color:{{TEXT}};margin:0 0 12px 0;line-height:1.85;padding-left:4px;"><span style="font-weight:700;color:{{PRIMARY}};">{{NUM}}.</span>&nbsp;&nbsp;{{ITEM}}</p>
 ```
 
-### image_placeholder
+### decorative_illustration
 
 ```html
-<section style="border:1px dashed {{BORDER}};padding:42px 20px;margin:32px 0;text-align:center;">
-<p style="font-size:12px;color:{{TEXT_LIGHT}};margin:0;">[ 案例截图 / 数据图表 ]</p>
+<section style="background:linear-gradient(135deg, {{HIGHLIGHT_BG}} 0%, {{BG}} 100%);border:1px solid {{HIGHLIGHT_BG}};padding:42px 20px;margin:32px 0;text-align:center;">
+<p style="font-size:12px;color:{{TEXT_LIGHT}};margin:0;">[ Claude 生成装饰插画位置 ]</p>
 </section>
 ```
 

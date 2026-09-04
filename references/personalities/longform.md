@@ -73,11 +73,11 @@ Substack/竹白风格，适合长篇随笔、深度叙事、连载。
 
 一条灰线，仅此而已。
 
-### image_placeholder
+### decorative_illustration
 
 ```html
 <section style="padding:40px 0;text-align:center;">
-<p style="font-size:13px;color:{{TEXT_LIGHT}};margin:0;">[ 图片位置 ]</p>
+<p style="font-size:13px;color:{{TEXT_LIGHT}};margin:0;">[ Claude 生成装饰插画位置 ]</p>
 </section>
 <p style="font-size:12px;color:{{TEXT_LIGHT}};margin:0 0 0 0;text-align:center;">{{CAPTION}}</p>
 ```

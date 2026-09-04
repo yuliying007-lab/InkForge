@@ -142,11 +142,11 @@
 <p style="font-size:15px;color:{{TEXT}};margin:0 0 12px 0;line-height:1.85;padding-left:4px;">•&nbsp;&nbsp;{{ITEM}}</p>
 ```
 
-### image_placeholder
+### decorative_illustration
 
 ```html
-<section style="background-color:{{HIGHLIGHT_BG}};border:1px dashed {{BORDER}};padding:42px 20px;margin:32px 0;text-align:center;">
-<p style="font-size:12px;color:{{TEXT_LIGHT}};margin:0;">[ 活动现场照片 ]</p>
+<section style="background-color:{{HIGHLIGHT_BG}};background:linear-gradient(135deg, {{HIGHLIGHT_BG}} 0%, {{BG}} 100%);border:1px solid {{HIGHLIGHT_BG}};padding:42px 20px;margin:32px 0;text-align:center;">
+<p style="font-size:12px;color:{{TEXT_LIGHT}};margin:0;">[ Claude 生成装饰插画位置 ]</p>
 </section>
 ```
 
@@ -156,11 +156,11 @@
 
 ```html
 <section style="display:flex;gap:8px;margin:18px 0;">
-<section style="flex:1;background-color:{{HIGHLIGHT_BG}};border:1px dashed {{BORDER}};padding:36px 10px;text-align:center;">
-<p style="font-size:11px;color:{{TEXT_LIGHT}};margin:0;">[ 现场照片 1 ]</p>
+<section style="flex:1;background-color:{{HIGHLIGHT_BG}};background:linear-gradient(135deg, {{HIGHLIGHT_BG}} 0%, {{BG}} 100%);border:1px solid {{HIGHLIGHT_BG}};padding:36px 10px;text-align:center;">
+<p style="font-size:11px;color:{{TEXT_LIGHT}};margin:0;">[ Claude 生成装饰插画位置 ]</p>
 </section>
-<section style="flex:1;background-color:{{HIGHLIGHT_BG}};border:1px dashed {{BORDER}};padding:36px 10px;text-align:center;">
-<p style="font-size:11px;color:{{TEXT_LIGHT}};margin:0;">[ 现场照片 2 ]</p>
+<section style="flex:1;background-color:{{HIGHLIGHT_BG}};background:linear-gradient(135deg, {{HIGHLIGHT_BG}} 0%, {{BG}} 100%);border:1px solid {{HIGHLIGHT_BG}};padding:36px 10px;text-align:center;">
+<p style="font-size:11px;color:{{TEXT_LIGHT}};margin:0;">[ Claude 生成装饰插画位置 ]</p>
 </section>
 </section>
 ```

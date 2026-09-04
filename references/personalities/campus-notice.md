@@ -127,11 +127,11 @@
 
 `{{ORG_SHORT}}` 是组织简称（2-4字），如「学工处」「团委」。右对齐，微信中 flex 退化后仍可接受。
 
-### image_placeholder
+### decorative_illustration
 
 ```html
-<section style="border:1px dashed {{BORDER}};padding:40px 20px;margin:32px 0;text-align:center;">
-<p style="font-size:12px;color:{{TEXT_LIGHT}};margin:0;">[ 二维码/活动海报位置 ]</p>
+<section style="background:linear-gradient(135deg, {{HIGHLIGHT_BG}} 0%, {{BG}} 100%);border:1px solid {{HIGHLIGHT_BG}};padding:40px 20px;margin:32px 0;text-align:center;">
+<p style="font-size:12px;color:{{TEXT_LIGHT}};margin:0;">[ Claude 生成装饰插画位置 ]</p>
 </section>
 ```
 

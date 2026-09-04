@@ -110,11 +110,11 @@
 <section style="border-bottom:1px dashed {{TEXT_LIGHT}};margin:48px 0;opacity:0.3;"></section>
 ```
 
-### image_placeholder
+### decorative_illustration
 
 ```html
 <section style="background-color:{{HIGHLIGHT_BG}};border-radius:12px;padding:40px 20px;margin:32px 0;text-align:center;">
-<p style="font-size:12px;color:{{TEXT_LIGHT}};margin:0;">[ 图片位置 ]</p>
+<p style="font-size:12px;color:{{TEXT_LIGHT}};margin:0;">[ Claude 生成装饰插画位置 ]</p>
 </section>
 ```
 

@@ -112,11 +112,11 @@
 <span style="background-color:{{HIGHLIGHT_BG}};color:{{PRIMARY}};font-weight:600;padding:2px 6px;border-radius:3px;">{{TEXT}}</span>
 ```
 
-### image_placeholder
+### decorative_illustration
 
 ```html
-<section style="border:1px dashed {{TEXT_LIGHT}};padding:42px 20px;margin:32px 0;text-align:center;border-radius:8px;">
-<p style="font-size:12px;color:{{TEXT_LIGHT}};margin:0;">[ 参考图 / 示例 ]</p>
+<section style="background:linear-gradient(135deg, {{HIGHLIGHT_BG}} 0%, {{BG}} 100%);border:1px solid {{HIGHLIGHT_BG}};padding:42px 20px;margin:32px 0;text-align:center;border-radius:8px;">
+<p style="font-size:12px;color:{{TEXT_LIGHT}};margin:0;">[ Claude 生成装饰插画位置 ]</p>
 </section>
 ```
 

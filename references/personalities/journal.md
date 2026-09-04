@@ -78,7 +78,7 @@
 <p style="font-size:12px;color:{{TEXT_LIGHT}};margin:48px 0;text-align:center;letter-spacing:8px;">· · · · ·</p>
 ```
 
-### image_placeholder
+### decorative_illustration
 
 ```html
 <section style="background-color:{{HIGHLIGHT_BG}};border:1px dashed #d0c8b8;border-radius:4px;padding:40px 20px;margin:32px 0;text-align:center;transform:rotate(0.3deg);">

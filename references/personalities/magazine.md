@@ -72,7 +72,7 @@
 <p style="font-size:12px;color:{{TEXT_LIGHT}};margin:36px 0;text-align:center;">—— ✦ ——</p>
 ```
 
-### image_placeholder
+### decorative_illustration
 
 ```html
 <section style="background-color:{{HIGHLIGHT_BG}};padding:48px 20px;margin:32px 0;text-align:center;border-radius:4px;">

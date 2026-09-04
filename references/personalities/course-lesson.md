@@ -60,7 +60,7 @@
 <section style="background-color:{{HIGHLIGHT_BG}};border-left:3px solid {{SECONDARY}};padding:18px 20px;margin:32px 0;">
 <p style="font-size:11px;color:{{SECONDARY}};margin:0 0 8px 0;letter-spacing:1px;font-weight:700;">🤔 随堂思考</p>
 <p style="font-size:15px;color:{{TEXT}};line-height:1.85;margin:0 0 10px 0;">{{QUESTION}}</p>
-<section style="background-color:{{BG}};border:1px dashed {{BORDER}};padding:10px 14px;">
+<section style="background-color:{{BG}};background:linear-gradient(135deg, {{HIGHLIGHT_BG}} 0%, {{BG}} 100%);border:1px solid {{HIGHLIGHT_BG}};padding:10px 14px;">
 <p style="font-size:13px;color:{{TEXT_LIGHT}};margin:0;line-height:1.7;">💡 {{HINT}}</p>
 </section>
 </section>
@@ -126,11 +126,11 @@
 <section style="border-bottom:1px dashed {{BORDER}};margin:48px 0;"></section>
 ```
 
-### image_placeholder
+### decorative_illustration
 
 ```html
 <section style="background-color:#2d3a2e;border-radius:4px;padding:42px 20px;margin:32px 0;text-align:center;">
-<p style="font-size:12px;color:rgba(255,255,255,0.45);margin:0;">[ 示意图 / 流程图 / 板书截图 ]</p>
+<p style="font-size:12px;color:rgba(255,255,255,0.45);margin:0;">[ Claude 生成装饰插画位置 ]</p>
 </section>
 ```
 

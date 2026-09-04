@@ -76,11 +76,11 @@
 <p style="font-size:10px;color:{{TEXT_LIGHT}};margin:48px 0;letter-spacing:2px;text-align:center;font-family:'SF Mono',monospace;">▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓</p>
 ```
 
-### image_placeholder
+### decorative_illustration
 
 ```html
 <section style="border:3px solid {{TEXT}};padding:48px 20px;margin:32px 0;text-align:center;">
-<p style="font-size:14px;font-weight:700;color:{{TEXT}};margin:0;font-family:'SF Mono',monospace;">[ IMG ]</p>
+<p style="font-size:14px;font-weight:700;color:{{TEXT}};margin:0;font-family:'SF Mono',monospace;">[ Claude 生成装饰插画位置 ]</p>
 </section>
 ```
 

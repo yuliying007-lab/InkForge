@@ -128,12 +128,12 @@ emoji 做图标前缀——无需额外图片，微信原生支持。`{{HOURS}}`
 <p style="font-size:15px;color:{{TEXT}};margin:0 0 12px 0;line-height:1.85;padding-left:2px;">✦&nbsp; {{ITEM}}</p>
 ```
 
-### image_placeholder
+### decorative_illustration
 
 ```html
 <section style="background-color:{{HIGHLIGHT_BG}};border-radius:10px;padding:44px 20px;margin:32px 0;text-align:center;">
 <p style="font-size:11px;color:{{TEXT_LIGHT}};margin:0 0 4px 0;">📷</p>
-<p style="font-size:12px;color:{{TEXT_LIGHT}};margin:0;">[ 实拍图位置 ]</p>
+<p style="font-size:12px;color:{{TEXT_LIGHT}};margin:0;">[ Claude 生成装饰插画位置 ]</p>
 </section>
 ```
 

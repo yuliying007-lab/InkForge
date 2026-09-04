@@ -93,11 +93,11 @@
 
 圆点（8px `border-radius:50%`）在竖线顶部，标记每个时间节点。
 
-### image_placeholder
+### decorative_illustration
 
 ```html
 <section style="background-color:{{HIGHLIGHT_BG}};border:1px dashed {{SECONDARY}};border-radius:8px;padding:36px 16px;margin:32px 0;text-align:center;">
-<p style="font-size:13px;color:{{TEXT_LIGHT}};margin:0;">[ 图片位置 ]</p>
+<p style="font-size:13px;color:{{TEXT_LIGHT}};margin:0;">[ Claude 生成装饰插画位置 ]</p>
 </section>
 ```
 

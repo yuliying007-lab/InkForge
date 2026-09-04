@@ -15,7 +15,7 @@
 
 <!-- 图片占位 -->
 <section style="background-color:{{HIGHLIGHT_BG}};padding:60px 20px;margin:0 -20px 20px -20px;text-align:center;">
-<p style="font-size:12px;color:{{TEXT_LIGHT}};margin:0;">[ 成品图 ]</p>
+<p style="font-size:12px;color:{{TEXT_LIGHT}};margin:0;">[ Claude 生成装饰插画位置 ]</p>
 </section>
 
 <h1 style="font-size:24px;font-weight:800;color:{{TEXT}};margin:0 0 10px 0;line-height:1.35;">{{DISH_NAME}}</h1>
@@ -112,11 +112,11 @@
 </section>
 ```
 
-### image_placeholder
+### decorative_illustration
 
 ```html
-<section style="border:1px dashed {{TEXT_LIGHT}};padding:42px 20px;margin:16px 0;text-align:center;">
-<p style="font-size:12px;color:{{TEXT_LIGHT}};margin:0;">[ 步骤图 / 过程图 ]</p>
+<section style="background:linear-gradient(135deg, {{HIGHLIGHT_BG}} 0%, {{BG}} 100%);border:1px solid {{HIGHLIGHT_BG}};padding:42px 20px;margin:16px 0;text-align:center;">
+<p style="font-size:12px;color:{{TEXT_LIGHT}};margin:0;">[ Claude 生成装饰插画位置 ]</p>
 </section>
 ```
 

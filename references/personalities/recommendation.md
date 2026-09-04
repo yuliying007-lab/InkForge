@@ -31,7 +31,7 @@
 <section style="margin:18px 0;border-radius:10px;overflow:hidden;border:1px solid {{HIGHLIGHT_BG}};">
 <!-- 图片占位 -->
 <section style="background-color:{{HIGHLIGHT_BG}};padding:50px 20px;text-align:center;">
-<p style="font-size:12px;color:{{TEXT_LIGHT}};margin:0;">[ 产品图片 ]</p>
+<p style="font-size:12px;color:{{TEXT_LIGHT}};margin:0;">[ Claude 生成装饰插画位置 ]</p>
 </section>
 <!-- 信息区 -->
 <section style="padding:16px 18px;">
@@ -88,11 +88,11 @@
 </section>
 ```
 
-### image_placeholder
+### decorative_illustration
 
 ```html
-<section style="border:1px dashed {{TEXT_LIGHT}};padding:42px 20px;margin:32px 0;text-align:center;border-radius:8px;">
-<p style="font-size:12px;color:{{TEXT_LIGHT}};margin:0;">[ 产品实拍 / 使用场景 ]</p>
+<section style="background:linear-gradient(135deg, {{HIGHLIGHT_BG}} 0%, {{BG}} 100%);border:1px solid {{HIGHLIGHT_BG}};padding:42px 20px;margin:32px 0;text-align:center;border-radius:8px;">
+<p style="font-size:12px;color:{{TEXT_LIGHT}};margin:0;">[ Claude 生成装饰插画位置 ]</p>
 </section>
 ```
 

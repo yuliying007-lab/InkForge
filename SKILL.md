@@ -3,7 +3,7 @@ name: InkForge
 description: >
   InkForge — 微信公众号文章锻造引擎。将 Markdown 或纯文本锻造为微信公众号可直接粘贴的纯内联样式 HTML。
   支持 36 种设计人格（排版结构）× 108 种色彩主题（行业配色），3800+ 种组合。
-  内置数据图表自动生成、章节分隔符设计、Unsplash/官方渠道配图策略。
+  内置数据图表自动生成、章节分隔符设计、Claude 原生 HTML/CSS 装饰插画。
   当用户提到以下任何情况时触发：微信排版、公众号排版、微信文章格式化、WeChat typesetting、
   公众号模板、微信推文排版、文章转HTML、微信内联样式、把文章排版成微信格式、
   "帮我排版"、"排版一下"、"转成微信格式"、"公众号发布格式"、InkForge。
@@ -20,7 +20,7 @@ description: >
 1. **纯内联 style 属性**——不能用 `<style>` 标签、不能用 CSS class
 2. **不能用外部字体/资源**——`font-family` 只能用系统字体栈
 3. **不能用 JS**——纯静态 HTML
-4. **图片必须实际嵌入**——Claude 通过 WebSearch 搜索真实图片 URL，用 `<img>` 标签直接嵌入 HTML；禁止使用占位符或纯文字标注
+4. **配图由 Claude 生成**——Claude 使用纯 HTML/CSS 内联样式制作装饰性插画（几何图形、渐变色块、图标组合、抽象场景等），直接嵌入文章中；不使用外部图片 URL、不调用 WebSearch/WebFetch 搜索图片
 5. **字体栈**：`-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif`
 6. **等宽字体栈**：`"SF Mono", "Fira Code", "Courier New", Consolas, monospace`
 7. **最外层容器**：`max-width: 677px`（微信正文区宽度），左右 padding 用 `10px`～`20px`
@@ -72,7 +72,7 @@ Claude 在组装 HTML 时，必须使用以上间距值。人格模板中若有�
 - **彩色背景降频**：使用 HIGHLIGHT_BG 底色的组件（卡片、引用块、高亮块）不得连续出现，两个彩色背景块之间必须隔着至少一个白底（BG）段落
 - **主色面积比**：单屏视口内，带主题色（PRIMARY / SECONDARY / HIGHLIGHT_BG）的元素面积不超过约 30%，其余为白底 + TEXT 色正文，给读者视觉休息空间
 - **分隔符减淡**：长文中分隔符颜色从 PRIMARY 降级为 TEXT_LIGHT，降低章节切换的视觉断裂感
-- **配图数量**：长文（> 4000 字）配图控制在 2 张（开头区域 + 结尾前），避免图片过多加剧杂乱感
+- **装饰插画数量**：长文（> 4000 字）Claude 生成的装饰插画控制在 2 处（开头区域 + 结尾前），避免视觉元素过多加剧杂乱感
 
 **三、节奏示意**
 
@@ -108,24 +108,27 @@ article_footer
 
 > **核心原则：用户必须亲自选择模板和主题，Claude 不得自动匹配跳过选择器。** 即使文章内容信号明显，也必须走"用户亲选"流程。自动匹配表仅用于在选择器中标注"推荐"，帮助用户决策，不能用于替代用户选择。
 
-**流程（严格按顺序执行）：**
+**流程（合并选择器 · 一次选完）：**
 
-1. **模板选择器（第一步）：** 当用户未指定模板时，使用 `show_widget` 输出模板选择器。
-   - 展示全部 36 种人格模板，按内容类型分组，支持搜索
-   - 根据文章内容在匹配度最高的模板上标注「推荐」
-   - **预览面板（必须）：** 用户悬停或点选某个模板时，右侧/下方展示该模板的排版预览——使用用户实际文章的前 200-300 字，套用该模板的 HTML 组件结构（article_header、section_heading、body_paragraph、blockquote 等）渲染成真实排版效果。预览使用默认中性配色（如 T01 极简墨黑），让用户专注于模板结构差异
-   - 用户确认后通过 `sendPrompt` 回传模板代号。**必须等用户选择后才能进入下一步。**
+使用 `show_widget` 输出**合并选择器**，在一个面板中同时展示模板和配色，用户一次操作选完两者：
 
-2. **主题选择器（第二步）：** 当用户未指定主题时，使用 `show_widget` 输出内联配色选择器。
-   - 包含全部 108 套配色的色卡网格，按分组展示，支持搜索和筛选
-   - **预览面板（必须）：** 用户点选某个色卡时，展示使用**已选模板 + 该配色**的排版预览——使用用户实际文章的前 200-300 字，套用第一步选定的模板结构，将主题色值替换到 `{{PRIMARY}}`、`{{SECONDARY}}` 等占位符中，渲染成真实排版效果。预览区应展示多个典型组件（标题、正文段落、引用块、高亮文本、分隔符、列表），让用户直观感受配色在实际排版中的效果
-   - 用户确认后通过 `sendPrompt` 回传主题代号。**必须等用户选择后才能开始排版。**
+**选择器结构：**
 
-色卡数据和预览模板：读取下方「主题色表」生成色卡。预览区优先使用用户实际文章内容；如文章尚未提供，使用通用示例文本。
+1. **模板区（顶部）：** 展示全部 36 种人格模板，按内容类型分组为小药片（pills）。根据文章内容在匹配度最高的模板上标注「推荐」并默认高亮。模板按 6 行排列，每行一类（深度内容 / 数据信息 / 叙事人物 / 教育职场 / 生活消费 / 风格活动）。
+
+2. **配色区（中部）：** 全部 108 套配色的色卡网格，每个色卡显示 PRIMARY（上 60%）+ SECONDARY（下 40%）的矩形色块 + 名称。按 17 个分类标签页筛选（经典中性、专业行业、生活方式……），支持搜索主题名称或编号。根据文章行业词自动推荐并默认高亮匹配的配色。
+
+3. **实时预览区（底部）：** 用户点选模板或配色时，下方展示使用**已选模板 + 已选配色**的排版预览。预览使用用户实际文章的前 200-300 字，套用所选模板的 HTML 组件结构（article_header、section_heading、body_paragraph、blockquote、数据卡片等），将主题色值替换到实际渲染。预览区 max-height 480px，可滚动。每个模板需预设一个渲染函数，展示该模板的典型组件组合。
+
+4. **确认按钮：** 显示「确认使用：P27 政策解读 × T66 法式优雅 ↗」，点击通过 `sendPrompt('使用模板：P27 政策解读，配色：T66 法式优雅')` 回传选择。
+
+**色卡数据：** 将下方「主题色表」全部 108 套配色编码为 JS 数组 `[code, name, primary_hex, secondary_hex, highlight_hex, bg_hex, text_hex, textlight_hex]`，分类索引为 `[category_name, start_index, count]`。
+
+**预览内容：** 优先使用用户实际文章内容（标题、前 2-3 段正文、一句引用）；如文章尚未提供，使用通用示例文本。
 
 **禁止行为：**
 - 禁止在用户给出文章后直接自动匹配模板和主题开始排版
-- 禁止跳过任何一个选择器
+- 禁止跳过选择器
 - 禁止用"输出末尾注明所用模板"来替代选择器流程
 
 自动匹配逻辑见下方「自动匹配表」——仅用于选择器中的「推荐」标注。
@@ -160,7 +163,7 @@ article_footer
 | `1. / - ` 列表 | list_item |
 | `---` 分隔线 | separator（见「分隔符」） |
 | `**加粗**` | highlight_inline |
-| `![](img)` 或 `[图片]` | image_placeholder（见「配图策略」） |
+| `![](img)` 或 `[图片]` | decorative_illustration（见「配图策略」） |
 | 数据/表格/百分比 | 图表组件（见「图表」） |
 | 文末 | article_footer |
 
@@ -186,43 +189,38 @@ article_footer
 - 同一篇文章中图表不超过 3 个
 - 所有数字标注单位和来源
 
-**B. 氛围配图（多渠道搜索 · 必须嵌入真实图片）**
+**B. 装饰插画（Claude 原生生成 · 纯 HTML/CSS）**
 
-> **禁止使用占位符、灰色方块、纯文字标注来替代真实配图。** Claude 必须通过 WebSearch + WebFetch 找到真实图片 URL，用 `<img>` 标签直接嵌入 HTML。
+> **不使用外部图片。** Claude 使用纯内联样式 HTML/CSS 直接在文章中生成装饰性视觉元素，无需 WebSearch、WebFetch 或任何外部图片 URL。所有视觉元素均为 HTML 元素 + 内联 style 组合，与微信公众号完全兼容。
 
-当文章需要场景照片、氛围图时，Claude 根据文章内容深度理解上下文语境，提取与文章具体主题高度相关的搜索词，主动搜索图片并嵌入。
+当文章需要视觉点缀时，Claude 根据文章内容和所选主题色，生成与文章调性匹配的装饰插画。
 
-**图片来源优先级（按场景选择最合适的渠道）：**
+**可用的生成技法：**
 
-1. **官方渠道（最高优先级）** — 当文章涉及**特定机构、大学、品牌、政府、具名组织**时，**必须优先**搜索该机构的官方图片素材，而非通用图库。具体方式：
-   - 大学类文章 → WebSearch 搜索该大学名 + 相关关键词（如 `Macquarie University campus`），找到官方新闻稿、Media/Press 页面、权威媒体报道 → WebFetch 页面 → 提取图片直链
-   - 企业类文章 → 搜索企业官方 Press Kit、新闻发布、权威媒体报道
-   - 政府/政策类 → 搜索政府部门官方网站公开图片
-   - 行业类文章 → 搜索行业协会、权威媒体报道配图
-   - **关键：图片必须与文章讨论的具体对象直接相关**，例如写麦考瑞大学的文章就要用麦考瑞大学的真实校园照片，不能用无关大学或通用教室图片
+1. **几何抽象图** — 使用 `border-radius`、`transform: rotate()`、`width/height` 组合出圆形、三角形、菱形等几何元素，搭配主题色 `{{PRIMARY}}`/`{{SECONDARY}}`/`{{HIGHLIGHT_BG}}` 构成抽象场景
+2. **渐变色块横幅** — 使用 `linear-gradient` 制作全宽横幅装饰条，作为章节视觉锚点
+3. **图标文字组合** — 使用 emoji + 大号字体 + 主题色背景，制作象征性图标卡片（如 🎓 代表教育、💡 代表创意、📊 代表数据）
+4. **数据可视化装饰** — 利用 `width` 百分比模拟进度条、柱状图等轻量数据图形
+5. **引用装饰框** — 使用多层 border、背景色叠加、圆角等制作精致的装饰性引用区域
+6. **分栏信息卡** — flexbox 布局的多列信息展示卡片，用色块和图标增加视觉层次
 
-2. **Unsplash（通用氛围图）** — 当文章**不涉及特定机构**或官方渠道找不到合适图片时，使用 WebSearch 搜索 `site:unsplash.com` + 关键词 → WebFetch 具体图片页面 → 提取 `https://images.unsplash.com/photo-{id}?w=1080&q=80` 格式直链，标注摄影师。
-3. **Pexels / Pixabay（备选）** — 当 Unsplash 结果不理想时，可搜索其他免费图库。
+**生成规则：**
+- 所有视觉元素必须使用**纯内联 style**，不使用 CSS class、不使用 `<style>` 标签
+- 颜色跟随主题色占位符（`{{PRIMARY}}`、`{{SECONDARY}}` 等），确保与文章整体配色一致
+- 每篇文章插入 1-2 处装饰插画，分布在文章开头区域和中段转折处
+- 装饰插画高度控制在 80px-160px，不喧宾夺主
+- 长文（> 4000 字）控制在 2 处以内
 
-**完整工作流（每张图必须走完）：**
-1. 分析文章上下文，确定每张图的位置和应该表达的内容
-2. 根据优先级选择搜索渠道，用 WebSearch 搜索
-3. 用 WebFetch 打开搜索结果中的图片页面
-4. 从页面中提取真实的图片直链 URL（不是缩略图、不是页面链接）
-5. 用 `<img>` 标签将直链嵌入 HTML 正文对应位置
-
-**嵌入方式：** 直接使用 `<img>` 标签嵌入图片 URL，标注来源：
+**嵌入方式示例（几何抽象横幅）：**
 
 ```html
-<section style="margin:22px 0;text-align:center;">
-<img src="{{IMAGE_URL}}" style="width:100%;border-radius:8px;" alt="{{ALT_TEXT}}">
-<p style="font-size:11px;color:{{TEXT_LIGHT}};margin:6px 0 0;line-height:1.5;">{{IMAGE_CREDIT}}</p>
+<section style="margin:32px 0;padding:24px 20px;background:linear-gradient(135deg, {{HIGHLIGHT_BG}} 0%, {{BG}} 100%);position:relative;overflow:hidden;">
+<section style="position:absolute;right:-20px;top:-20px;width:80px;height:80px;border-radius:50%;background:{{PRIMARY}};opacity:0.06;"></section>
+<section style="position:absolute;right:30px;bottom:-10px;width:40px;height:40px;border-radius:50%;background:{{SECONDARY}};opacity:0.08;"></section>
+<p style="font-size:20px;font-weight:700;color:{{PRIMARY}};margin:0 0 6px;">{{VISUAL_TITLE}}</p>
+<p style="font-size:13px;color:{{TEXT_LIGHT}};margin:0;">{{VISUAL_SUBTITLE}}</p>
 </section>
 ```
-
-每篇文章插入 2-4 张配图，分布在文章开头、中段转折处和结尾前。
-
-**微信限制：** 微信公众号不支持外链图片。用户在微信编辑器中使用时，需要先下载图片再上传至微信素材库，替换 HTML 中的图片链接。Claude 在排版输出末尾提供所有图片的下载链接汇总，方便用户批量下载。
 
 ### 第五步：输出
 

@@ -151,11 +151,11 @@ emoji 前缀（如 🔥 热门话题、⭐ 成员聚光、📚 本周精选）�
 
 三点分隔——社群风格比实线或虚线更柔和。
 
-### image_placeholder
+### decorative_illustration
 
 ```html
 <section style="background-color:{{HIGHLIGHT_BG}};border-radius:8px;padding:42px 20px;margin:32px 0;text-align:center;">
-<p style="font-size:12px;color:{{TEXT_LIGHT}};margin:0;">[ 社群截图 / 活动照片 ]</p>
+<p style="font-size:12px;color:{{TEXT_LIGHT}};margin:0;">[ Claude 生成装饰插画位置 ]</p>
 </section>
 ```
 

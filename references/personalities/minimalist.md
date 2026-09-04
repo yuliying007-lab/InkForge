@@ -71,11 +71,11 @@
 
 仅40px宽的短线，极克制。
 
-### image_placeholder
+### decorative_illustration
 
 ```html
 <section style="padding:48px 20px;margin:32px 0;text-align:center;">
-<p style="font-size:12px;color:{{TEXT_LIGHT}};margin:0;">[ 图片位置 ]</p>
+<p style="font-size:12px;color:{{TEXT_LIGHT}};margin:0;">[ Claude 生成装饰插画位置 ]</p>
 </section>
 ```
 
