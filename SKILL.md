@@ -45,6 +45,55 @@ description: >
 
 Claude 在组装 HTML 时，必须使用以上间距值。人格模板中若有更小的间距写法，以此规范为准覆盖。
 
+### 长文排版规则（2000 字以上自动生效）
+
+长文章若不加约束，装饰组件堆叠会导致视觉杂乱。Claude 在第四步组装 HTML 前，先估算文章正文字数，超过 2000 字时自动启用以下规则。
+
+**一、组件预算**
+
+| 文章长度 | 重型组件上限 | 中型组件上限 | 静区占比（仅含 section_heading + body_paragraph 的章节） |
+|---------|------------|------------|------|
+| < 2000 字 | 3 | 不限 | 不强制 |
+| 2000 – 4000 字 | 3 | 5 | ≥ 30% |
+| > 4000 字 | 3 | 4 | ≥ 50% |
+
+组件分级：
+- **重型**：chart（CHART-1 ~ CHART-9）、before_after、key_clause、impact_tags
+- **中型**：blockquote、highlight_inline 块、list_item 组（单个加粗词不算）
+- **轻型**：section_heading、body_paragraph、article_header/footer、separator
+
+硬规则：**两个重型组件之间必须间隔至少 2 个纯文本段落**，不得背靠背出现。
+
+**二、色彩浓度控制**
+
+长文中 PRIMARY + SECONDARY 两个强色同时大量出现会"视觉跳跃"。启用以下约束：
+
+- **SECONDARY 限用**：SECONDARY 色仅用于 1-2 个全文焦点位置（最核心的数据卡片标题、文章主标题装饰线等），其余组件一律使用 PRIMARY 或 TEXT_LIGHT
+- **彩色背景降频**：使用 HIGHLIGHT_BG 底色的组件（卡片、引用块、高亮块）不得连续出现，两个彩色背景块之间必须隔着至少一个白底（BG）段落
+- **主色面积比**：单屏视口内，带主题色（PRIMARY / SECONDARY / HIGHLIGHT_BG）的元素面积不超过约 30%，其余为白底 + TEXT 色正文，给读者视觉休息空间
+- **分隔符减淡**：长文中分隔符颜色从 PRIMARY 降级为 TEXT_LIGHT，降低章节切换的视觉断裂感
+- **配图数量**：长文（> 4000 字）配图控制在 2 张（开头区域 + 结尾前），避免图片过多加剧杂乱感
+
+**三、节奏示意**
+
+理想的长文视觉节奏为「密 → 疏 → 密 → 疏」交替：
+
+```
+article_header（重型）
+  ↓ 静区：2-3 段 body_paragraph
+separator
+  ↓ 中型：blockquote 或 list_item
+  ↓ 静区：2-3 段 body_paragraph
+separator
+  ↓ 重型：chart 或 before_after
+  ↓ 静区：2-3 段 body_paragraph
+  ↓ 中型：highlight_inline
+  ↓ 静区：2-3 段 body_paragraph
+article_footer
+```
+
+而非：重型 → 重型 → 中型 → 重型 → 中型 → 重型。
+
 ## 工作流
 
 ### 第一步：确定人格 + 主题
