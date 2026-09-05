@@ -121,6 +121,46 @@ Claude 根据人格风格自动选择合适的标题风格。每篇文章使用*
 
 ---
 
+## HEAD-12 · 三角箭头
+
+CSS 三角形指向标题，导航感强。适合步骤教程、指南、攻略类内容。
+
+```html
+<h2 style="font-size:17px;font-weight:700;color:{{TEXT}};margin:40px 0 18px 0;line-height:1.3;"><span style="display:inline-block;width:0;height:0;border-top:6px solid transparent;border-bottom:6px solid transparent;border-left:8px solid {{PRIMARY}};margin-right:10px;vertical-align:middle;"></span>{{HEADING}}</h2>
+```
+
+---
+
+## HEAD-13 · 分体标签
+
+黑底白字编号标签 + 标题文字并排，杂志分栏感。适合杂志、专栏、系列文章类内容。
+
+```html
+<h2 style="font-size:17px;font-weight:700;color:{{TEXT}};margin:40px 0 18px 0;line-height:1.5;"><span style="display:inline-block;background:{{PRIMARY}};color:{{BG}};padding:2px 10px;margin-right:8px;font-size:13px;font-weight:700;">PART {{NUM}}</span>{{HEADING}}</h2>
+```
+
+---
+
+## HEAD-14 · 3D 色块阴影
+
+偏移实心投影，复古海报/版画风。适合潮玩、Y2K、复古港风、创意类内容。
+
+```html
+<p style="margin:40px 0 18px 0;"><span style="display:inline-block;font-size:16px;font-weight:700;color:{{TEXT}};background:{{HIGHLIGHT_BG}};padding:6px 16px;box-shadow:3px 3px 0px {{PRIMARY}};">{{HEADING}}</span></p>
+```
+
+---
+
+## HEAD-15 · 票据虚线
+
+虚线左边框 + 浅底色，票根/收据既视感。适合清单、盘点、探店、攻略类内容。
+
+```html
+<h2 style="font-size:17px;font-weight:700;color:{{TEXT}};border-left:3px dashed {{TEXT_LIGHT}};padding:6px 0 6px 14px;background:{{HIGHLIGHT_BG}};margin:40px 0 18px 0;line-height:1.3;">{{HEADING}}</h2>
+```
+
+---
+
 ## 风格匹配建议
 
 | 人格风格 | 推荐标题风格 |
@@ -128,12 +168,15 @@ Claude 根据人格风格自动选择合适的标题风格。每篇文章使用*
 | 评测对比、深度特稿、杂志专栏 | HEAD-01 粗下划线 或 HEAD-07 双线夹标题 |
 | 政策解读、数据报告、学术科研 | HEAD-02 左竖条 或 HEAD-10 顶部色条 |
 | 长文叙事、散文随笔、品牌故事 | HEAD-03 纯字重 |
-| 清单盘点、榜单排名、步骤教程 | HEAD-04 幽灵编号 |
+| 清单盘点、榜单排名、步骤教程 | HEAD-04 幽灵编号 或 HEAD-12 三角箭头 |
 | 极简侘寂、北欧白桦、日系和纸 | HEAD-05 细发丝线 或 HEAD-03 纯字重 |
 | 博客推荐、种草好物、生活方式 | HEAD-06 荧光笔标记 |
-| 杂志版式、深度访谈、Kinfolk 风 | HEAD-07 双线夹标题 |
-| 产品发布、电竞霓虹、潮玩手办 | HEAD-08 色带反白 |
-| 科技蓝、信息图、数码极客 | HEAD-09 左圆点 |
+| 杂志版式、深度访谈、Kinfolk 风 | HEAD-07 双线夹标题 或 HEAD-13 分体标签 |
+| 产品发布、电竞霓虹、潮玩手办 | HEAD-08 色带反白 或 HEAD-14 3D 色块阴影 |
+| 科技蓝、信息图、数码极客 | HEAD-09 左圆点 或 HEAD-12 三角箭头 |
 | 建筑设计、现代商务、产品详情 | HEAD-10 顶部色条 |
 | 书信手札、邀请函、诗歌散文 | HEAD-11 居中短横 |
+| 探店攻略、清单盘点、票据风格 | HEAD-15 票据虚线 |
+| Y2K、复古港风、创意潮玩 | HEAD-14 3D 色块阴影 |
+| 杂志专栏、系列文章、连载 | HEAD-13 分体标签 |
 | 通用 / 无特殊倾向 | HEAD-01 粗下划线 |
