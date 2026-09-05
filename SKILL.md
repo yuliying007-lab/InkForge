@@ -3,7 +3,7 @@ name: InkForge
 description: >
   InkForge — 微信公众号文章锻造引擎。将 Markdown 或纯文本锻造为微信公众号可直接粘贴的纯内联样式 HTML。
   支持 36 种设计人格（排版结构）× 108 种色彩主题（行业配色），3800+ 种组合。
-  内置数据图表自动生成、章节分隔符设计、Claude 原生 HTML/CSS 装饰插画。
+  内置数据图表自动生成、章节标题风格库、分隔符设计库、Claude 原生 HTML/CSS 装饰插画。
   当用户提到以下任何情况时触发：微信排版、公众号排版、微信文章格式化、WeChat typesetting、
   公众号模板、微信推文排版、文章转HTML、微信内联样式、把文章排版成微信格式、
   "帮我排版"、"排版一下"、"转成微信格式"、"公众号发布格式"、InkForge。
@@ -157,7 +157,7 @@ article_footer
 | Markdown 元素 | 内容块名称 |
 |--------------|----------|
 | `# 标题` | article_header |
-| `## 小标题` | section_heading |
+| `## 小标题` | section_heading（见「标题风格」） |
 | 普通段落 | body_paragraph |
 | `> 引用` | blockquote |
 | `1. / - ` 列表 | list_item |
@@ -169,9 +169,20 @@ article_footer
 
 副标题（紧跟主标题的较短文本）映射到 `article_subtitle`。
 
+### 第四步附：标题风格
+
+章节标题使用独立的标题风格库。读取 `references/headings.md` 获取 11 种标题装饰风格。
+
+**使用规则：**
+- 每篇文章使用**一种**标题风格保持视觉一致
+- 人格模板自带的 `section_heading` 为默认值
+- Claude 也可根据文章调性从标题风格库中选择更合适的风格（headings.md 中有匹配建议表）
+- 用户可手动指定标题风格覆盖模板默认
+- 标题颜色跟随主题色占位符
+
 ### 第四步附：分隔符
 
-文章各章节之间插入装饰性分隔符。读取 `references/dividers.md` 获取 10 种分隔符设计。
+文章各章节之间插入装饰性分隔符。读取 `references/dividers.md` 获取 20 种分隔符设计。
 
 **使用规则：**
 - 每篇文章使用**一种**分隔符风格保持视觉一致
