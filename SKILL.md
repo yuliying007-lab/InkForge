@@ -24,8 +24,8 @@ description: >
 5. **字体栈**：`-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif`
 6. **等宽字体栈**：`"SF Mono", "Fira Code", "Courier New", Consolas, monospace`
 7. **最外层容器**：`max-width: 677px`（微信正文区宽度），左右 padding 用 `10px`～`20px`
-8. **正文字号**：14px-16px，行高 1.8-2.0，字色 `#333` 或 `#3f3f3f`
-9. **段间距**：`margin-bottom: 20px-28px`
+8. **正文字号**：14px-16px，行高 1.8-1.9，字色 `#333` 或 `#3f3f3f`
+9. **段间距**：`margin-bottom: 16px-20px`
 
 ### 呼吸感间距规范（全局强制）
 
@@ -35,7 +35,7 @@ description: >
 |------|---------|------|
 | **章节分隔符** | `margin: 48px 0` | 章节之间的最大呼吸区，让读者明确感知"翻篇" |
 | **小标题（h2）** | `margin-top: 40px` | 标题前要有足够的空间与上文脱离 |
-| **正文段落** | `margin-bottom: 24px` | 段落间适度留白，不能挤成一坨 |
+| **正文段落** | `margin-bottom: 18px` | 段落间紧凑留白，保持阅读连贯 |
 | **图表/卡片/对比组件** | `margin: 32px 0` | 数据组件前后留出呼吸空间 |
 | **引用块/verdict 框** | `margin: 32px 0` | 强调块需要视觉隔离 |
 | **组件内部 padding** | `padding: 18px-20px` | 卡片/引用块内部留白不能太挤 |
